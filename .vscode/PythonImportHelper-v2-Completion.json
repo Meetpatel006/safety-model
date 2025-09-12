@@ -18,7 +18,24 @@
         "documentation": {}
     },
     {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
         "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
         "importPath": "fastapi",
         "description": "fastapi",
         "isExtraImport": true,
@@ -50,7 +67,47 @@
         "documentation": {}
     },
     {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
         "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -202,6 +259,135 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -217,6 +403,15 @@
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "modal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "modal",
+        "description": "modal",
+        "detail": "modal",
         "documentation": {}
     },
     {
@@ -308,69 +503,12 @@
         "documentation": {}
     },
     {
-        "label": "CORSMiddleware",
-        "importPath": "fastapi.middleware.cors",
-        "description": "fastapi.middleware.cors",
-        "isExtraImport": true,
-        "detail": "fastapi.middleware.cors",
-        "documentation": {}
-    },
-    {
-        "label": "JSONResponse",
-        "importPath": "fastapi.responses",
-        "description": "fastapi.responses",
-        "isExtraImport": true,
-        "detail": "fastapi.responses",
-        "documentation": {}
-    },
-    {
-        "label": "Optional",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Dict",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "List",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
-        "label": "Union",
-        "importPath": "typing",
-        "description": "typing",
-        "isExtraImport": true,
-        "detail": "typing",
-        "documentation": {}
-    },
-    {
         "label": "numpy",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "numpy",
         "description": "numpy",
         "detail": "numpy",
-        "documentation": {}
-    },
-    {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
         "documentation": {}
     },
     {
@@ -383,78 +521,12 @@
         "documentation": {}
     },
     {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "timedelta",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
         "label": "uvicorn",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "uvicorn",
         "description": "uvicorn",
         "detail": "uvicorn",
-        "documentation": {}
-    },
-    {
-        "label": "os",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "os",
-        "description": "os",
-        "detail": "os",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "Path",
-        "importPath": "pathlib",
-        "description": "pathlib",
-        "isExtraImport": true,
-        "detail": "pathlib",
-        "documentation": {}
-    },
-    {
-        "label": "modal",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "modal",
-        "description": "modal",
-        "detail": "modal",
         "documentation": {}
     },
     {
@@ -501,65 +573,47 @@
         "documentation": {}
     },
     {
+        "label": "GeoFenceSafetyPredictor",
+        "kind": 6,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "class GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 encoder_path: str = \"label_encoder.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained model and geofence data\"\"\"\n        # Resolve paths relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)\n        self.encoder_path = str(base_dir / encoder_path)",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
         "label": "Location",
         "kind": 6,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "class Location(BaseModel):\n    latitude: float\n    longitude: float\n@app.post(\"/predict\")\ndef predict_safety(loc: Location):\n    features = extract_features(loc.latitude, loc.longitude, geofences)\n    pred_encoded = model.predict([features])[0]\n    pred_label = label_encoder.inverse_transform([pred_encoded])[0]\n    return {\n        \"latitude\": loc.latitude,",
+        "peekOfCode": "class Location(BaseModel):\n    \"\"\"Input schema for location data prediction\"\"\"\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    latitude: float = Field(..., description=\"Input latitude\")\n    longitude: float = Field(..., description=\"Input longitude\")\n    predicted_risk_label: str = Field(..., description=\"Predicted risk category\")\n    predicted_safety_score: int = Field(..., description=\"Safety score (20-100)\")",
         "detail": "geo fencing.api",
         "documentation": {}
     },
     {
-        "label": "haversine_distance",
+        "label": "SafetyPrediction",
+        "kind": 6,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "class SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    latitude: float = Field(..., description=\"Input latitude\")\n    longitude: float = Field(..., description=\"Input longitude\")\n    predicted_risk_label: str = Field(..., description=\"Predicted risk category\")\n    predicted_safety_score: int = Field(..., description=\"Safety score (20-100)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    features: Dict = Field(..., description=\"Extracted features used for prediction\")\n    timestamp: str = Field(..., description=\"Prediction timestamp\")\n@app.on_event(\"startup\")",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "startup_event",
         "kind": 2,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\ndef extract_features(lat, lon, geofences):\n    distances, risks = [], []\n    for fence in geofences:",
+        "peekOfCode": "def startup_event():\n    \"\"\"FastAPI startup event: initialize the predictor\"\"\"\n    global predictor\n    predictor = GeoFenceSafetyPredictor()\n    if predictor.model is None:\n        logger.warning(\"Model failed to load during startup. Ensure required files exist in the geo fencing directory.\")\n@app.get(\"/\")\nasync def root():\n    \"\"\"Root endpoint with API information\"\"\"\n    return {",
         "detail": "geo fencing.api",
         "documentation": {}
     },
     {
-        "label": "extract_features",
-        "kind": 2,
-        "importPath": "geo fencing.api",
-        "description": "geo fencing.api",
-        "peekOfCode": "def extract_features(lat, lon, geofences):\n    distances, risks = [], []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            dist = haversine_distance(lat, lon, center_lat, center_lon)\n            distances.append(dist)\n            risks.append(fence.get(\"riskLevel\"))\n    if distances:",
-        "detail": "geo fencing.api",
-        "documentation": {}
-    },
-    {
-        "label": "predict_safety",
-        "kind": 2,
-        "importPath": "geo fencing.api",
-        "description": "geo fencing.api",
-        "peekOfCode": "def predict_safety(loc: Location):\n    features = extract_features(loc.latitude, loc.longitude, geofences)\n    pred_encoded = model.predict([features])[0]\n    pred_label = label_encoder.inverse_transform([pred_encoded])[0]\n    return {\n        \"latitude\": loc.latitude,\n        \"longitude\": loc.longitude,\n        \"predicted_risk_label\": pred_label,\n        \"predicted_safety_score\": RISK_SCORE_MAP.get(pred_label, 100),\n        # Provide a 1-100 safety score for compatibility with other models.",
-        "detail": "geo fencing.api",
-        "documentation": {}
-    },
-    {
-        "label": "RISK_SCORE_MAP",
+        "label": "logger",
         "kind": 5,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90,\n    \"Safe\": 100\n}\n# ---------- Load model + encoder ----------\nmodel = joblib.load(\"geofence_safety_model.pkl\")\nlabel_encoder = joblib.load(\"label_encoder.pkl\")",
-        "detail": "geo fencing.api",
-        "documentation": {}
-    },
-    {
-        "label": "model",
-        "kind": 5,
-        "importPath": "geo fencing.api",
-        "description": "geo fencing.api",
-        "peekOfCode": "model = joblib.load(\"geofence_safety_model.pkl\")\nlabel_encoder = joblib.load(\"label_encoder.pkl\")\n# Load geofences\nwith open(\"geofences.json\", \"r\") as f:\n    geofences = json.load(f)\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)",
-        "detail": "geo fencing.api",
-        "documentation": {}
-    },
-    {
-        "label": "label_encoder",
-        "kind": 5,
-        "importPath": "geo fencing.api",
-        "description": "geo fencing.api",
-        "peekOfCode": "label_encoder = joblib.load(\"label_encoder.pkl\")\n# Load geofences\nwith open(\"geofences.json\", \"r\") as f:\n    geofences = json.load(f)\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 encoder_path: str = \"label_encoder.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained model and geofence data\"\"\"\n        # Resolve paths relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -568,7 +622,16 @@
         "kind": 5,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "app = FastAPI(title=\"GeoFence Safety Score API\")\nclass Location(BaseModel):\n    latitude: float\n    longitude: float\n@app.post(\"/predict\")\ndef predict_safety(loc: Location):\n    features = extract_features(loc.latitude, loc.longitude, geofences)\n    pred_encoded = model.predict([features])[0]\n    pred_label = label_encoder.inverse_transform([pred_encoded])[0]\n    return {",
+        "peekOfCode": "app = FastAPI(\n    title=\"GeoFence Safety Prediction API\",\n    description=\"API for predicting geofence safety scores based on location data\",\n    version=\"1.0.0\",\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\n# Add CORS middleware\napp.add_middleware(\n    CORSMiddleware,",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "predictor",
+        "kind": 5,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "predictor = None\nclass Location(BaseModel):\n    \"\"\"Input schema for location data prediction\"\"\"\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    latitude: float = Field(..., description=\"Input latitude\")\n    longitude: float = Field(..., description=\"Input longitude\")\n    predicted_risk_label: str = Field(..., description=\"Predicted risk category\")",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -642,6 +705,60 @@
         "description": "geo fencing.feature",
         "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90,\n    \"Safe\": 100\n}\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371",
         "detail": "geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "fastapi_app",
+        "kind": 2,
+        "importPath": "geo fencing.modal_app",
+        "description": "geo fencing.modal_app",
+        "peekOfCode": "def fastapi_app():\n    # Import the FastAPI app from the local api.py inside the image filesystem.\n    # Because we added the project directory to the Image at /root/app, we\n    # need to ensure Python can import it. We'll adjust sys.path at runtime.\n    import sys\n    from pathlib import Path as _P\n    app_dir = _P(\"/root/app\")\n    if str(app_dir) not in sys.path:\n        sys.path.insert(0, str(app_dir))\n    from api import app as fastapi_app  # type: ignore",
+        "detail": "geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "geo fencing.modal_app",
+        "description": "geo fencing.modal_app",
+        "peekOfCode": "app = modal.App(\"geofence-safety-api\")\n# Build the container image (explicit python version)\nimage = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n            \"joblib\",\n            \"pandas\",",
+        "detail": "geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "geo fencing.modal_app",
+        "description": "geo fencing.modal_app",
+        "peekOfCode": "image = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n            \"joblib\",\n            \"pandas\",\n            \"numpy\",\n            # Model runtime dependencies",
+        "detail": "geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "geo fencing.modal_app",
+        "description": "geo fencing.modal_app",
+        "peekOfCode": "project_root = Path(__file__).resolve().parent\nimage = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model files to ensure they're available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_files = [\n    \"geofence_safety_model.pkl\",\n    \"label_encoder.pkl\",\n    \"geofences.json\"\n]\nfor model_file in model_files:",
+        "detail": "geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "geo fencing.modal_app",
+        "description": "geo fencing.modal_app",
+        "peekOfCode": "image = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model files to ensure they're available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_files = [\n    \"geofence_safety_model.pkl\",\n    \"label_encoder.pkl\",\n    \"geofences.json\"\n]\nfor model_file in model_files:\n    file_path = project_root / model_file",
+        "detail": "geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "model_files",
+        "kind": 5,
+        "importPath": "geo fencing.modal_app",
+        "description": "geo fencing.modal_app",
+        "peekOfCode": "model_files = [\n    \"geofence_safety_model.pkl\",\n    \"label_encoder.pkl\",\n    \"geofences.json\"\n]\nfor model_file in model_files:\n    file_path = project_root / model_file\n    if file_path.exists():\n        image = image.add_local_file(str(file_path), remote_path=f\"/root/app/{model_file}\")\n    else:",
+        "detail": "geo fencing.modal_app",
         "documentation": {}
     },
     {
@@ -721,7 +838,7 @@
         "kind": 6,
         "importPath": "weather model.api",
         "description": "weather model.api",
-        "peekOfCode": "class WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0, le=1)\n    pressure: float = Field(..., description=\"Atmospheric pressure in millibars\", ge=900, le=1100)",
+        "peekOfCode": "class WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    # Allow visibility and cloud_cover without an arbitrary upper limit; still enforce non-negative\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0)",
         "detail": "weather model.api",
         "documentation": {}
     },
@@ -775,7 +892,7 @@
         "kind": 5,
         "importPath": "weather model.api",
         "description": "weather model.api",
-        "peekOfCode": "predictor = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0, le=1)",
+        "peekOfCode": "predictor = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    # Allow visibility and cloud_cover without an arbitrary upper limit; still enforce non-negative\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0)",
         "detail": "weather model.api",
         "documentation": {}
     },

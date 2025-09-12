@@ -196,7 +196,8 @@ class WeatherSafetyPredictor:
                 "humidity": hourly['relative_humidity_2m'][current_idx] / 100,  # Convert to 0-1
                 "wind_speed": hourly['wind_speed_10m'][current_idx],
                 "wind_bearing": hourly['wind_direction_10m'][current_idx],
-                "visibility": min(hourly.get('visibility', [10])[current_idx] / 1000, 50),  # Convert meters to km and cap at 50
+                # Convert meters to km; do not arbitrarily cap visibility here so callers can supply higher values
+                "visibility": hourly.get('visibility', [10])[current_idx] / 1000,
                 "pressure": hourly['pressure_msl'][current_idx],
                 "cloud_cover": 0.5,  # Default value
                 "precip_rain": 1 if hourly['precipitation'][current_idx] > 0 else 0,
@@ -268,8 +269,9 @@ class WeatherInput(BaseModel):
     humidity: float = Field(..., description="Humidity (0-1 decimal or 0-100 percentage)", ge=0, le=100)
     wind_speed: float = Field(..., description="Wind speed in km/h", ge=0, le=200)
     wind_bearing: Optional[float] = Field(None, description="Wind direction in degrees", ge=0, le=360)
-    visibility: float = Field(..., description="Visibility in km", ge=0, le=50)
-    cloud_cover: Optional[float] = Field(None, description="Cloud cover (0-1)", ge=0, le=1)
+    # Allow visibility and cloud_cover without an arbitrary upper limit; still enforce non-negative
+    visibility: float = Field(..., description="Visibility in km", ge=0)
+    cloud_cover: Optional[float] = Field(None, description="Cloud cover (0-1)", ge=0)
     pressure: float = Field(..., description="Atmospheric pressure in millibars", ge=900, le=1100)
 
     @validator('humidity')
