@@ -441,6 +441,23 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "modal",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "modal",
+        "description": "modal",
+        "detail": "modal",
+        "documentation": {}
+    },
+    {
         "label": "XGBClassifier",
         "importPath": "xgboost",
         "description": "xgboost",
@@ -691,6 +708,15 @@
         "documentation": {}
     },
     {
+        "label": "WeatherSafetyPredictor",
+        "kind": 6,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "class WeatherSafetyPredictor:\n    \"\"\"Weather Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"weather_safety_model_kaggle.pkl\"):\n        \"\"\"Initialize the predictor with the trained model\"\"\"\n        # Resolve model path relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        resolved_path = Path(model_path)\n        if not resolved_path.is_absolute():\n            resolved_path = base_dir / model_path\n        self.model_path = str(resolved_path)",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
         "label": "WeatherInput",
         "kind": 6,
         "importPath": "weather model.api",
@@ -713,16 +739,7 @@
         "kind": 6,
         "importPath": "weather model.api",
         "description": "weather model.api",
-        "peekOfCode": "class SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    safety_score: int = Field(..., description=\"Safety score (0-4)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    safety_category: str = Field(..., description=\"Safety category name\")\n    confidence: float = Field(..., description=\"Prediction confidence (0-1)\")\n    probabilities: Dict[str, float] = Field(..., description=\"Probability for each safety category\")\n    input_features: Dict[str, float] = Field(..., description=\"Processed input features\")\ndef load_model():\n    \"\"\"Load the trained model and preprocessing objects\"\"\"",
-        "detail": "weather model.api",
-        "documentation": {}
-    },
-    {
-        "label": "load_model",
-        "kind": 2,
-        "importPath": "weather model.api",
-        "description": "weather model.api",
-        "peekOfCode": "def load_model():\n    \"\"\"Load the trained model and preprocessing objects\"\"\"\n    global model_instance, scaler_instance, feature_names\n    model_path = \"weather_safety_model_kaggle.pkl\"\n    if not os.path.exists(model_path):\n        logger.error(f\"Model file not found: {model_path}\")\n        return False\n    try:\n        model_data = joblib.load(model_path)\n        model_instance = model_data['model']",
+        "peekOfCode": "class SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    safety_score: int = Field(..., description=\"Safety score (0-4)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    safety_category: str = Field(..., description=\"Safety category name\")\n    confidence: float = Field(..., description=\"Prediction confidence (0-1)\")\n    probabilities: Dict[str, float] = Field(..., description=\"Probability for each safety category\")\n    input_features: Dict[str, float] = Field(..., description=\"Processed input features\")\n@app.on_event(\"startup\")\ndef startup_event():",
         "detail": "weather model.api",
         "documentation": {}
     },
@@ -731,25 +748,7 @@
         "kind": 2,
         "importPath": "weather model.api",
         "description": "weather model.api",
-        "peekOfCode": "def startup_event():\n    \"\"\"FastAPI startup event: attempt to load the model and log status.\"\"\"\n    loaded = load_model()\n    if not loaded:\n        logger.warning(\"Model failed to load during startup. Ensure 'weather_safety_model_kaggle.pkl' exists in the same directory as 'api.py' and contains 'model', 'scaler', and 'feature_names'.\")\ndef prepare_features(weather_data: dict) -> pd.DataFrame:\n    \"\"\"Prepare features for prediction in the same format as training\"\"\"\n    df = pd.DataFrame([weather_data])\n    # Create derived features that were created during training\n    if 'temperature' in df.columns and 'apparent_temperature' in df.columns:",
-        "detail": "weather model.api",
-        "documentation": {}
-    },
-    {
-        "label": "prepare_features",
-        "kind": 2,
-        "importPath": "weather model.api",
-        "description": "weather model.api",
-        "peekOfCode": "def prepare_features(weather_data: dict) -> pd.DataFrame:\n    \"\"\"Prepare features for prediction in the same format as training\"\"\"\n    df = pd.DataFrame([weather_data])\n    # Create derived features that were created during training\n    if 'temperature' in df.columns and 'apparent_temperature' in df.columns:\n        df['temp_difference'] = df['apparent_temperature'] - df['temperature']\n    if 'temperature' in df.columns and 'humidity' in df.columns:\n        # Heat index approximation\n        df['heat_index'] = df['temperature'] + 0.5 * (df['humidity'] * 100 - 50)\n    if 'wind_speed' in df.columns and 'temperature' in df.columns:",
-        "detail": "weather model.api",
-        "documentation": {}
-    },
-    {
-        "label": "fetch_openmeteo_data",
-        "kind": 2,
-        "importPath": "weather model.api",
-        "description": "weather model.api",
-        "peekOfCode": "def fetch_openmeteo_data(latitude: float, longitude: float, days: int = 7) -> dict:\n    \"\"\"Fetch weather data from Open-Meteo API\"\"\"\n    end_date = datetime.now().strftime('%Y-%m-%d')\n    start_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')\n    url = \"https://api.open-meteo.com/v1/forecast\"\n    params = {\n        \"latitude\": latitude,\n        \"longitude\": longitude,\n        \"start_date\": start_date,\n        \"end_date\": end_date,",
+        "peekOfCode": "def startup_event():\n    \"\"\"FastAPI startup event: initialize the predictor\"\"\"\n    global predictor\n    predictor = WeatherSafetyPredictor()\n    if predictor.model is None:\n        logger.warning(\"Model failed to load during startup. Ensure 'weather_safety_model_kaggle.pkl' exists in the same directory as 'api.py' and contains 'model', 'scaler', and 'feature_names'.\")\n@app.get(\"/\")\nasync def root():\n    \"\"\"Root endpoint with API information\"\"\"\n    return {",
         "detail": "weather model.api",
         "documentation": {}
     },
@@ -758,7 +757,7 @@
         "kind": 5,
         "importPath": "weather model.api",
         "description": "weather model.api",
-        "peekOfCode": "logger = logging.getLogger(__name__)\n# Initialize FastAPI app\napp = FastAPI(\n    title=\"Weather Safety Prediction API\",\n    description=\"API for predicting weather safety scores based on meteorological conditions\",\n    version=\"1.0.0\",\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\n# Add CORS middleware",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass WeatherSafetyPredictor:\n    \"\"\"Weather Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"weather_safety_model_kaggle.pkl\"):\n        \"\"\"Initialize the predictor with the trained model\"\"\"\n        # Resolve model path relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        resolved_path = Path(model_path)\n        if not resolved_path.is_absolute():\n            resolved_path = base_dir / model_path",
         "detail": "weather model.api",
         "documentation": {}
     },
@@ -772,30 +771,66 @@
         "documentation": {}
     },
     {
-        "label": "model_instance",
+        "label": "predictor",
         "kind": 5,
         "importPath": "weather model.api",
         "description": "weather model.api",
-        "peekOfCode": "model_instance = None\nscaler_instance = None\nfeature_names = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)",
+        "peekOfCode": "predictor = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0, le=1)",
         "detail": "weather model.api",
         "documentation": {}
     },
     {
-        "label": "scaler_instance",
-        "kind": 5,
-        "importPath": "weather model.api",
-        "description": "weather model.api",
-        "peekOfCode": "scaler_instance = None\nfeature_names = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)",
-        "detail": "weather model.api",
+        "label": "fastapi_app",
+        "kind": 2,
+        "importPath": "weather model.modal_app",
+        "description": "weather model.modal_app",
+        "peekOfCode": "def fastapi_app():\n    # Import the FastAPI app from the local api.py inside the image filesystem.\n    # Because we added the project directory to the Image at /root/app, we\n    # need to ensure Python can import it. We'll adjust sys.path at runtime.\n    import sys\n    from pathlib import Path as _P\n    app_dir = _P(\"/root/app\")\n    if str(app_dir) not in sys.path:\n        sys.path.insert(0, str(app_dir))\n    from api import app as fastapi_app  # type: ignore",
+        "detail": "weather model.modal_app",
         "documentation": {}
     },
     {
-        "label": "feature_names",
+        "label": "app",
         "kind": 5,
-        "importPath": "weather model.api",
-        "description": "weather model.api",
-        "peekOfCode": "feature_names = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0, le=1)",
-        "detail": "weather model.api",
+        "importPath": "weather model.modal_app",
+        "description": "weather model.modal_app",
+        "peekOfCode": "app = modal.App(\"weather-safety-api\")\n# Build the container image (explicit python version)\nimage = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n                \"joblib\",\n                \"pandas\",",
+        "detail": "weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "weather model.modal_app",
+        "description": "weather model.modal_app",
+        "peekOfCode": "image = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n                \"joblib\",\n                \"pandas\",\n                \"numpy\",\n                \"requests\",",
+        "detail": "weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "weather model.modal_app",
+        "description": "weather model.modal_app",
+        "peekOfCode": "project_root = Path(__file__).resolve().parent\nimage = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model file to ensure it's available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_file = project_root / \"weather_safety_model_kaggle.pkl\"\nif model_file.exists():\n    image = image.add_local_file(str(model_file), remote_path=\"/root/app/weather_safety_model_kaggle.pkl\")\nelse:\n    # Leave this as informative; the runtime will still log if the file is missing.\n    pass",
+        "detail": "weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "weather model.modal_app",
+        "description": "weather model.modal_app",
+        "peekOfCode": "image = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model file to ensure it's available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_file = project_root / \"weather_safety_model_kaggle.pkl\"\nif model_file.exists():\n    image = image.add_local_file(str(model_file), remote_path=\"/root/app/weather_safety_model_kaggle.pkl\")\nelse:\n    # Leave this as informative; the runtime will still log if the file is missing.\n    pass\n# If you prefer adding only python source directories, you can use:",
+        "detail": "weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "model_file",
+        "kind": 5,
+        "importPath": "weather model.modal_app",
+        "description": "weather model.modal_app",
+        "peekOfCode": "model_file = project_root / \"weather_safety_model_kaggle.pkl\"\nif model_file.exists():\n    image = image.add_local_file(str(model_file), remote_path=\"/root/app/weather_safety_model_kaggle.pkl\")\nelse:\n    # Leave this as informative; the runtime will still log if the file is missing.\n    pass\n# If you prefer adding only python source directories, you can use:\n# image = image.add_local_python_source(\"..\")  # relative to project layout\n# Expose FastAPI app via Modal\n@app.function(image=image, min_containers=1, timeout=600)",
+        "detail": "weather model.modal_app",
         "documentation": {}
     },
     {
