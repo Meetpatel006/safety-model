@@ -1,0 +1,2083 @@
+[
+  {
+    "id": "disaster-0",
+    "name": "Andhra Pradesh Coast",
+    "type": "circle",
+    "coords": [
+      16.3067,
+      80.1833
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Andhra Pradesh",
+    "riskLevel": "Very High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Andhra Pradesh Coast",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Cyclone Zone",
+      "State": "Andhra Pradesh",
+      "Latitude": "16.3067",
+      "Longitude": "80.1833",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-1",
+    "name": "Rayalaseema Region",
+    "type": "circle",
+    "coords": [
+      14.4426,
+      78.4365
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Andhra Pradesh",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Rayalaseema Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Drought Zone",
+      "State": "Andhra Pradesh",
+      "Latitude": "14.4426",
+      "Longitude": "78.4365",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-2",
+    "name": "Guwahati City",
+    "type": "circle",
+    "coords": [
+      26.1445,
+      91.7362
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Assam",
+    "riskLevel": "Very High",
+    "source": "Central Water Commission",
+    "raw": {
+      "Name": "Guwahati City",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Flood Zone",
+      "State": "Assam",
+      "Latitude": "26.1445",
+      "Longitude": "91.7362",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Central Water Commission",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-3",
+    "name": "Patna City",
+    "type": "circle",
+    "coords": [
+      25.5941,
+      85.1376
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Bihar",
+    "riskLevel": "Very High",
+    "source": "Central Water Commission",
+    "raw": {
+      "Name": "Patna City",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Flood Zone",
+      "State": "Bihar",
+      "Latitude": "25.5941",
+      "Longitude": "85.1376",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Central Water Commission",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-4",
+    "name": "Delhi-NCR",
+    "type": "circle",
+    "coords": [
+      28.7041,
+      77.1025
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Delhi",
+    "riskLevel": "High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Delhi-NCR",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Earthquake Zone IV",
+      "State": "Delhi",
+      "Latitude": "28.7041",
+      "Longitude": "77.1025",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-5",
+    "name": "Gujarat Coast",
+    "type": "circle",
+    "coords": [
+      21.5222,
+      70.4579
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Gujarat",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Gujarat Coast",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Cyclone Zone",
+      "State": "Gujarat",
+      "Latitude": "21.5222",
+      "Longitude": "70.4579",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-6",
+    "name": "Kutch Region",
+    "type": "circle",
+    "coords": [
+      23.2,
+      69.6667
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Gujarat",
+    "riskLevel": "Very High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Kutch Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Earthquake Zone V",
+      "State": "Gujarat",
+      "Latitude": "23.2",
+      "Longitude": "69.6667",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-7",
+    "name": "Saurashtra Region",
+    "type": "circle",
+    "coords": [
+      21.9688,
+      70.7683
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Gujarat",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Saurashtra Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Drought Zone",
+      "State": "Gujarat",
+      "Latitude": "21.9688",
+      "Longitude": "70.7683",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-8",
+    "name": "Surat City",
+    "type": "circle",
+    "coords": [
+      21.1702,
+      72.8311
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Gujarat",
+    "riskLevel": "High",
+    "source": "Central Water Commission",
+    "raw": {
+      "Name": "Surat City",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Flood Zone",
+      "State": "Gujarat",
+      "Latitude": "21.1702",
+      "Longitude": "72.8311",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Central Water Commission",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-9",
+    "name": "Himachal Himalayas",
+    "type": "circle",
+    "coords": [
+      32.0836,
+      77.1734
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Himachal Pradesh",
+    "riskLevel": "High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Himachal Himalayas",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Landslide Zone",
+      "State": "Himachal Pradesh",
+      "Latitude": "32.0836",
+      "Longitude": "77.1734",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-10",
+    "name": "Shimla Region",
+    "type": "circle",
+    "coords": [
+      31.1048,
+      77.1734
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Himachal Pradesh",
+    "riskLevel": "High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Shimla Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Earthquake Zone IV",
+      "State": "Himachal Pradesh",
+      "Latitude": "31.1048",
+      "Longitude": "77.1734",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-11",
+    "name": "Kashmir Valley",
+    "type": "circle",
+    "coords": [
+      34.0837,
+      74.7973
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Jammu & Kashmir",
+    "riskLevel": "Very High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Kashmir Valley",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Earthquake Zone V",
+      "State": "Jammu & Kashmir",
+      "Latitude": "34.0837",
+      "Longitude": "74.7973",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-12",
+    "name": "Western Ghats Kerala",
+    "type": "circle",
+    "coords": [
+      10.8505,
+      76.2711
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Kerala",
+    "riskLevel": "High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Western Ghats Kerala",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Landslide Zone",
+      "State": "Kerala",
+      "Latitude": "10.8505",
+      "Longitude": "76.2711",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-13",
+    "name": "Marathwada Region",
+    "type": "circle",
+    "coords": [
+      19.0896,
+      76.5197
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Maharashtra",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Marathwada Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Drought Zone",
+      "State": "Maharashtra",
+      "Latitude": "19.0896",
+      "Longitude": "76.5197",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-14",
+    "name": "Mumbai Metropolitan Area",
+    "type": "circle",
+    "coords": [
+      19.076,
+      72.8777
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Maharashtra",
+    "riskLevel": "Medium",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Mumbai Metropolitan Area",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Earthquake Zone III",
+      "State": "Maharashtra",
+      "Latitude": "19.076",
+      "Longitude": "72.8777",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: Medium"
+    }
+  },
+  {
+    "id": "disaster-15",
+    "name": "Vidarbha Region",
+    "type": "circle",
+    "coords": [
+      20.9517,
+      77.7595
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Maharashtra",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Vidarbha Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Drought Zone",
+      "State": "Maharashtra",
+      "Latitude": "20.9517",
+      "Longitude": "77.7595",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-16",
+    "name": "Odisha Coast",
+    "type": "circle",
+    "coords": [
+      19.8107,
+      85.8245
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Odisha",
+    "riskLevel": "Very High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Odisha Coast",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Cyclone Zone",
+      "State": "Odisha",
+      "Latitude": "19.8107",
+      "Longitude": "85.8245",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-17",
+    "name": "Chennai City",
+    "type": "circle",
+    "coords": [
+      13.0827,
+      80.2707
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Tamil Nadu",
+    "riskLevel": "High",
+    "source": "Central Water Commission",
+    "raw": {
+      "Name": "Chennai City",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Flood Zone",
+      "State": "Tamil Nadu",
+      "Latitude": "13.0827",
+      "Longitude": "80.2707",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Central Water Commission",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-18",
+    "name": "Nilgiri Hills",
+    "type": "circle",
+    "coords": [
+      11.4064,
+      76.6932
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Tamil Nadu",
+    "riskLevel": "Very High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Nilgiri Hills",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Landslide Zone",
+      "State": "Tamil Nadu",
+      "Latitude": "11.4064",
+      "Longitude": "76.6932",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-19",
+    "name": "Tamil Nadu Coast",
+    "type": "circle",
+    "coords": [
+      11.1271,
+      78.6569
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Tamil Nadu",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Tamil Nadu Coast",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Cyclone Zone",
+      "State": "Tamil Nadu",
+      "Latitude": "11.1271",
+      "Longitude": "78.6569",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-20",
+    "name": "Bundelkhand Region",
+    "type": "circle",
+    "coords": [
+      25.318,
+      79.9183
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Uttar Pradesh",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "Bundelkhand Region",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Drought Zone",
+      "State": "Uttar Pradesh",
+      "Latitude": "25.318",
+      "Longitude": "79.9183",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-21",
+    "name": "Uttarakhand Hills",
+    "type": "circle",
+    "coords": [
+      30.0668,
+      79.0193
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "Uttarakhand",
+    "riskLevel": "High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Uttarakhand Hills",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Landslide Zone",
+      "State": "Uttarakhand",
+      "Latitude": "30.0668",
+      "Longitude": "79.0193",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-22",
+    "name": "Darjeeling Hills",
+    "type": "circle",
+    "coords": [
+      27.036,
+      88.2627
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "West Bengal",
+    "riskLevel": "Very High",
+    "source": "Geological Survey of India",
+    "raw": {
+      "Name": "Darjeeling Hills",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Landslide Zone",
+      "State": "West Bengal",
+      "Latitude": "27.036",
+      "Longitude": "88.2627",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Geological Survey of India",
+      "Additional_Info": "Risk Level: Very High"
+    }
+  },
+  {
+    "id": "disaster-23",
+    "name": "Kolkata Metropolitan Area",
+    "type": "circle",
+    "coords": [
+      22.5726,
+      88.3639
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "West Bengal",
+    "riskLevel": "High",
+    "source": "Central Water Commission",
+    "raw": {
+      "Name": "Kolkata Metropolitan Area",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Flood Zone",
+      "State": "West Bengal",
+      "Latitude": "22.5726",
+      "Longitude": "88.3639",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "Central Water Commission",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "disaster-24",
+    "name": "West Bengal Coast",
+    "type": "circle",
+    "coords": [
+      21.7679,
+      87.8526
+    ],
+    "radiusKm": 5,
+    "category": "Natural Disaster Risk Area",
+    "state": "West Bengal",
+    "riskLevel": "High",
+    "source": "India Meteorological Department",
+    "raw": {
+      "Name": "West Bengal Coast",
+      "Category": "Natural Disaster Risk Area",
+      "Sub_Category": "Cyclone Zone",
+      "State": "West Bengal",
+      "Latitude": "21.7679",
+      "Longitude": "87.8526",
+      "Area_km2": "",
+      "Year_Established": "",
+      "Source": "India Meteorological Department",
+      "Additional_Info": "Risk Level: High"
+    }
+  },
+  {
+    "id": "security-1",
+    "name": "Chhattisgarh Sensitive Installation",
+    "type": "point",
+    "coords": [
+      21.2787,
+      81.8661
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Chhattisgarh",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "1",
+      "Name": "Chhattisgarh Sensitive Installation",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Chhattisgarh",
+      "Region": "Central",
+      "Latitude": "21.2787",
+      "Longitude": "81.8661",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 10 sensitive installations declared prohibited"
+    }
+  },
+  {
+    "id": "security-2",
+    "name": "Dantewada District",
+    "type": "circle",
+    "coords": [
+      18.8833,
+      81.35
+    ],
+    "radiusKm": 5.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Chhattisgarh",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "2",
+      "Name": "Dantewada District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Chhattisgarh",
+      "Region": "Central",
+      "Latitude": "18.8833",
+      "Longitude": "81.35",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "5",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "High Naxal activity area"
+    }
+  },
+  {
+    "id": "security-3",
+    "name": "Bijapur District",
+    "type": "circle",
+    "coords": [
+      19.1,
+      80.7
+    ],
+    "radiusKm": 5.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Chhattisgarh",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "3",
+      "Name": "Bijapur District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Chhattisgarh",
+      "Region": "Central",
+      "Latitude": "19.1",
+      "Longitude": "80.7",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "5",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "High Naxal activity area"
+    }
+  },
+  {
+    "id": "security-4",
+    "name": "Sukma District",
+    "type": "circle",
+    "coords": [
+      18.3833,
+      81.6667
+    ],
+    "radiusKm": 5.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Chhattisgarh",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "4",
+      "Name": "Sukma District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Chhattisgarh",
+      "Region": "Central",
+      "Latitude": "18.3833",
+      "Longitude": "81.6667",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "5",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "High Naxal activity area"
+    }
+  },
+  {
+    "id": "security-5",
+    "name": "Madhya Pradesh Sensitive Installation 1",
+    "type": "point",
+    "coords": [
+      23.2599,
+      77.4126
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Madhya Pradesh",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "5",
+      "Name": "Madhya Pradesh Sensitive Installation 1",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Madhya Pradesh",
+      "Region": "Central",
+      "Latitude": "23.2599",
+      "Longitude": "77.4126",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 2 sensitive installations in Madhya Pradesh"
+    }
+  },
+  {
+    "id": "security-6",
+    "name": "Madhya Pradesh Sensitive Installation 2",
+    "type": "point",
+    "coords": [
+      24.6333,
+      77.95
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Madhya Pradesh",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "6",
+      "Name": "Madhya Pradesh Sensitive Installation 2",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Madhya Pradesh",
+      "Region": "Central",
+      "Latitude": "24.6333",
+      "Longitude": "77.95",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "Second sensitive installation in Madhya Pradesh"
+    }
+  },
+  {
+    "id": "security-7",
+    "name": "Bihar Sensitive Installation 1",
+    "type": "point",
+    "coords": [
+      25.0961,
+      85.3131
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Bihar",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "7",
+      "Name": "Bihar Sensitive Installation 1",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Bihar",
+      "Region": "Eastern",
+      "Latitude": "25.0961",
+      "Longitude": "85.3131",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 2 sensitive installations in Bihar"
+    }
+  },
+  {
+    "id": "security-8",
+    "name": "Bihar Sensitive Installation 2",
+    "type": "point",
+    "coords": [
+      25.5941,
+      85.1376
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Bihar",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "8",
+      "Name": "Bihar Sensitive Installation 2",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Bihar",
+      "Region": "Eastern",
+      "Latitude": "25.5941",
+      "Longitude": "85.1376",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "Second sensitive installation in Bihar"
+    }
+  },
+  {
+    "id": "security-9",
+    "name": "Malkangiri District",
+    "type": "circle",
+    "coords": [
+      18.35,
+      81.9
+    ],
+    "radiusKm": 5.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Odisha",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "9",
+      "Name": "Malkangiri District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Odisha",
+      "Region": "Eastern",
+      "Latitude": "18.35",
+      "Longitude": "81.9",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "5",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "High Naxal activity area"
+    }
+  },
+  {
+    "id": "security-10",
+    "name": "Kandhamal District",
+    "type": "circle",
+    "coords": [
+      20.15,
+      84.1167
+    ],
+    "radiusKm": 3.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Odisha",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "10",
+      "Name": "Kandhamal District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Odisha",
+      "Region": "Eastern",
+      "Latitude": "20.15",
+      "Longitude": "84.1167",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "3",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "Naxal affected area"
+    }
+  },
+  {
+    "id": "security-11",
+    "name": "Koraput District",
+    "type": "circle",
+    "coords": [
+      18.8167,
+      82.7167
+    ],
+    "radiusKm": 3.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Odisha",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "11",
+      "Name": "Koraput District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Odisha",
+      "Region": "Eastern",
+      "Latitude": "18.8167",
+      "Longitude": "82.7167",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "3",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "Naxal affected area"
+    }
+  },
+  {
+    "id": "security-12",
+    "name": "India-Bangladesh Border - West Bengal",
+    "type": "circle",
+    "coords": [
+      22.9868,
+      88.4643
+    ],
+    "radiusKm": 25.0,
+    "category": "International Border Zone",
+    "state": "West Bengal",
+    "riskLevel": "High",
+    "source": "BSF Border Documentation",
+    "raw": {
+      "ID": "12",
+      "Name": "India-Bangladesh Border - West Bengal",
+      "Category": "International Border Zone",
+      "State": "West Bengal",
+      "Region": "Eastern",
+      "Latitude": "22.9868",
+      "Longitude": "88.4643",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Border Documentation",
+      "Description": "International border with Bangladesh"
+    }
+  },
+  {
+    "id": "security-13",
+    "name": "Andaman & Nicobar Islands",
+    "type": "point",
+    "coords": [
+      11.7401,
+      92.6586
+    ],
+    "radiusKm": null,
+    "category": "Restricted Area - Union Territory",
+    "state": "Andaman & Nicobar Islands",
+    "riskLevel": "High",
+    "source": "MHA Restricted Areas Order 1963",
+    "raw": {
+      "ID": "13",
+      "Name": "Andaman & Nicobar Islands",
+      "Category": "Restricted Area - Union Territory",
+      "State": "Andaman & Nicobar Islands",
+      "Region": "Island Territory",
+      "Latitude": "11.7401",
+      "Longitude": "92.6586",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Restricted Areas Order 1963",
+      "Description": "Entire Union Territory under restricted regime"
+    }
+  },
+  {
+    "id": "security-14",
+    "name": "Andaman & Nicobar Sensitive Installation",
+    "type": "point",
+    "coords": [
+      11.7401,
+      92.6586
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Andaman & Nicobar Islands",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "14",
+      "Name": "Andaman & Nicobar Sensitive Installation",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Andaman & Nicobar Islands",
+      "Region": "Island Territory",
+      "Latitude": "11.7401",
+      "Longitude": "92.6586",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 10 sensitive installations declared prohibited"
+    }
+  },
+  {
+    "id": "security-15",
+    "name": "Whole of Sikkim",
+    "type": "point",
+    "coords": [
+      27.533,
+      88.5122
+    ],
+    "radiusKm": null,
+    "category": "Protected/Restricted Area - State Level",
+    "state": "Sikkim",
+    "riskLevel": "High",
+    "source": "MHA Protected/Restricted Areas Order",
+    "raw": {
+      "ID": "15",
+      "Name": "Whole of Sikkim",
+      "Category": "Protected/Restricted Area - State Level",
+      "State": "Sikkim",
+      "Region": "Northeast",
+      "Latitude": "27.533",
+      "Longitude": "88.5122",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Protected/Restricted Areas Order",
+      "Description": "Partly Protected Area and partly Restricted Area"
+    }
+  },
+  {
+    "id": "security-16",
+    "name": "Nathu La Pass",
+    "type": "circle",
+    "coords": [
+      27.3889,
+      88.8408
+    ],
+    "radiusKm": 15.0,
+    "category": "International Border Crossing",
+    "state": "Sikkim",
+    "riskLevel": "High",
+    "source": "India-China Border Documentation",
+    "raw": {
+      "ID": "16",
+      "Name": "Nathu La Pass",
+      "Category": "International Border Crossing",
+      "State": "Sikkim",
+      "Region": "Northeast",
+      "Latitude": "27.3889",
+      "Longitude": "88.8408",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "15",
+      "Source": "India-China Border Documentation",
+      "Description": "Border crossing between India and China"
+    }
+  },
+  {
+    "id": "security-17",
+    "name": "Whole of Arunachal Pradesh",
+    "type": "point",
+    "coords": [
+      28.218,
+      94.7278
+    ],
+    "radiusKm": null,
+    "category": "Protected Area - State Level",
+    "state": "Arunachal Pradesh",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "17",
+      "Name": "Whole of Arunachal Pradesh",
+      "Category": "Protected Area - State Level",
+      "State": "Arunachal Pradesh",
+      "Region": "Northeast",
+      "Latitude": "28.218",
+      "Longitude": "94.7278",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Entire state under protected area regime"
+    }
+  },
+  {
+    "id": "security-18",
+    "name": "India-China Border - Arunachal Pradesh",
+    "type": "circle",
+    "coords": [
+      27.1017,
+      93.6909
+    ],
+    "radiusKm": 25.0,
+    "category": "International Border Zone",
+    "state": "Arunachal Pradesh",
+    "riskLevel": "High",
+    "source": "ITBP Border Documentation",
+    "raw": {
+      "ID": "18",
+      "Name": "India-China Border - Arunachal Pradesh",
+      "Category": "International Border Zone",
+      "State": "Arunachal Pradesh",
+      "Region": "Northeast",
+      "Latitude": "27.1017",
+      "Longitude": "93.6909",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "ITBP Border Documentation",
+      "Description": "McMahon Line border with China"
+    }
+  },
+  {
+    "id": "security-19",
+    "name": "Tinsukia District",
+    "type": "circle",
+    "coords": [
+      27.4917,
+      95.36
+    ],
+    "radiusKm": 3.0,
+    "category": "Conflict-Prone Region - Insurgency",
+    "state": "Assam",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "19",
+      "Name": "Tinsukia District",
+      "Category": "Conflict-Prone Region - Insurgency",
+      "State": "Assam",
+      "Region": "Northeast",
+      "Latitude": "27.4917",
+      "Longitude": "95.36",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "3",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "Northeast insurgency affected area"
+    }
+  },
+  {
+    "id": "security-20",
+    "name": "Dibrugarh District",
+    "type": "circle",
+    "coords": [
+      27.4833,
+      94.9167
+    ],
+    "radiusKm": 3.0,
+    "category": "Conflict-Prone Region - Insurgency",
+    "state": "Assam",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "20",
+      "Name": "Dibrugarh District",
+      "Category": "Conflict-Prone Region - Insurgency",
+      "State": "Assam",
+      "Region": "Northeast",
+      "Latitude": "27.4833",
+      "Longitude": "94.9167",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "3",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "Northeast insurgency affected area"
+    }
+  },
+  {
+    "id": "security-21",
+    "name": "Whole of Manipur",
+    "type": "point",
+    "coords": [
+      24.6637,
+      93.9063
+    ],
+    "radiusKm": null,
+    "category": "Protected Area - State Level",
+    "state": "Manipur",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "21",
+      "Name": "Whole of Manipur",
+      "Category": "Protected Area - State Level",
+      "State": "Manipur",
+      "Region": "Northeast",
+      "Latitude": "24.6637",
+      "Longitude": "93.9063",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Entire state under protected area regime (relaxed till 2022)"
+    }
+  },
+  {
+    "id": "security-22",
+    "name": "Imphal East District",
+    "type": "circle",
+    "coords": [
+      24.857,
+      93.9063
+    ],
+    "radiusKm": 3.0,
+    "category": "Conflict-Prone Region - Insurgency",
+    "state": "Manipur",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "22",
+      "Name": "Imphal East District",
+      "Category": "Conflict-Prone Region - Insurgency",
+      "State": "Manipur",
+      "Region": "Northeast",
+      "Latitude": "24.857",
+      "Longitude": "93.9063",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "3",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "Northeast insurgency affected area"
+    }
+  },
+  {
+    "id": "security-23",
+    "name": "Imphal West District",
+    "type": "circle",
+    "coords": [
+      24.8083,
+      93.9442
+    ],
+    "radiusKm": 3.0,
+    "category": "Conflict-Prone Region - Insurgency",
+    "state": "Manipur",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "23",
+      "Name": "Imphal West District",
+      "Category": "Conflict-Prone Region - Insurgency",
+      "State": "Manipur",
+      "Region": "Northeast",
+      "Latitude": "24.8083",
+      "Longitude": "93.9442",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "3",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "Northeast insurgency affected area"
+    }
+  },
+  {
+    "id": "security-24",
+    "name": "Whole of Mizoram",
+    "type": "point",
+    "coords": [
+      23.1645,
+      92.9376
+    ],
+    "radiusKm": null,
+    "category": "Protected Area - State Level",
+    "state": "Mizoram",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "24",
+      "Name": "Whole of Mizoram",
+      "Category": "Protected Area - State Level",
+      "State": "Mizoram",
+      "Region": "Northeast",
+      "Latitude": "23.1645",
+      "Longitude": "92.9376",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Entire state under protected area regime (relaxed till 2022)"
+    }
+  },
+  {
+    "id": "security-25",
+    "name": "Whole of Nagaland",
+    "type": "point",
+    "coords": [
+      26.1584,
+      94.5624
+    ],
+    "radiusKm": null,
+    "category": "Protected Area - State Level",
+    "state": "Nagaland",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "25",
+      "Name": "Whole of Nagaland",
+      "Category": "Protected Area - State Level",
+      "State": "Nagaland",
+      "Region": "Northeast",
+      "Latitude": "26.1584",
+      "Longitude": "94.5624",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Entire state under protected area regime (relaxed till 2022)"
+    }
+  },
+  {
+    "id": "security-26",
+    "name": "Siachen Glacier Base Camp",
+    "type": "circle",
+    "coords": [
+      35.4219,
+      77.0699
+    ],
+    "radiusKm": 25.0,
+    "category": "Strategic Military Location",
+    "state": "Ladakh",
+    "riskLevel": "High",
+    "source": "Military Strategic Point Database",
+    "raw": {
+      "ID": "26",
+      "Name": "Siachen Glacier Base Camp",
+      "Category": "Strategic Military Location",
+      "State": "Ladakh",
+      "Region": "Northern",
+      "Latitude": "35.4219",
+      "Longitude": "77.0699",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "Military Strategic Point Database",
+      "Description": "Highest battlefield in the world"
+    }
+  },
+  {
+    "id": "security-27",
+    "name": "Daulat Beg Oldi",
+    "type": "circle",
+    "coords": [
+      35.1167,
+      78.0667
+    ],
+    "radiusKm": 25.0,
+    "category": "Strategic Military Location",
+    "state": "Ladakh",
+    "riskLevel": "High",
+    "source": "Military Strategic Point Database",
+    "raw": {
+      "ID": "27",
+      "Name": "Daulat Beg Oldi",
+      "Category": "Strategic Military Location",
+      "State": "Ladakh",
+      "Region": "Northern",
+      "Latitude": "35.1167",
+      "Longitude": "78.0667",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "Military Strategic Point Database",
+      "Description": "World's highest airstrip, strategic location"
+    }
+  },
+  {
+    "id": "security-28",
+    "name": "Wagah Border Crossing",
+    "type": "circle",
+    "coords": [
+      31.6094,
+      74.5728
+    ],
+    "radiusKm": 10.0,
+    "category": "International Border Crossing",
+    "state": "Punjab",
+    "riskLevel": "High",
+    "source": "BSF Border Documentation",
+    "raw": {
+      "ID": "28",
+      "Name": "Wagah Border Crossing",
+      "Category": "International Border Crossing",
+      "State": "Punjab",
+      "Region": "Northern",
+      "Latitude": "31.6094",
+      "Longitude": "74.5728",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "10",
+      "Source": "BSF Border Documentation",
+      "Description": "Main border crossing between India and Pakistan"
+    }
+  },
+  {
+    "id": "security-29",
+    "name": "Attari Border Post",
+    "type": "circle",
+    "coords": [
+      31.6167,
+      74.5667
+    ],
+    "radiusKm": 5.0,
+    "category": "Border Security Installation",
+    "state": "Punjab",
+    "riskLevel": "High",
+    "source": "BSF Border Documentation",
+    "raw": {
+      "ID": "29",
+      "Name": "Attari Border Post",
+      "Category": "Border Security Installation",
+      "State": "Punjab",
+      "Region": "Northern",
+      "Latitude": "31.6167",
+      "Longitude": "74.5667",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "5",
+      "Source": "BSF Border Documentation",
+      "Description": "Major BSF border outpost"
+    }
+  },
+  {
+    "id": "security-30",
+    "name": "Line of Control (LoC) - Kashmir",
+    "type": "circle",
+    "coords": [
+      34.5167,
+      75.6833
+    ],
+    "radiusKm": 25.0,
+    "category": "International Border/Conflict Zone",
+    "state": "Jammu & Kashmir",
+    "riskLevel": "Medium",
+    "source": "India-Pakistan Border Documentation",
+    "raw": {
+      "ID": "30",
+      "Name": "Line of Control (LoC) - Kashmir",
+      "Category": "International Border/Conflict Zone",
+      "State": "Jammu & Kashmir",
+      "Region": "Northern",
+      "Latitude": "34.5167",
+      "Longitude": "75.6833",
+      "Security_Level": "Medium",
+      "Buffer_Zone_Km": "25",
+      "Source": "India-Pakistan Border Documentation",
+      "Description": "De facto border between Indian and Pakistani administered Kashmir"
+    }
+  },
+  {
+    "id": "security-31",
+    "name": "Point 5353 - Kargil",
+    "type": "circle",
+    "coords": [
+      34.5256,
+      75.6987
+    ],
+    "radiusKm": 25.0,
+    "category": "Strategic Military Location",
+    "state": "Jammu & Kashmir",
+    "riskLevel": "Medium",
+    "source": "Military Strategic Point Database",
+    "raw": {
+      "ID": "31",
+      "Name": "Point 5353 - Kargil",
+      "Category": "Strategic Military Location",
+      "State": "Jammu & Kashmir",
+      "Region": "Northern",
+      "Latitude": "34.5256",
+      "Longitude": "75.6987",
+      "Security_Level": "Medium",
+      "Buffer_Zone_Km": "25",
+      "Source": "Military Strategic Point Database",
+      "Description": "Highest peak on Marpo La ridge, strategic importance"
+    }
+  },
+  {
+    "id": "security-32",
+    "name": "Line of Actual Control (LAC) - Ladakh",
+    "type": "circle",
+    "coords": [
+      34.1526,
+      77.5771
+    ],
+    "radiusKm": 25.0,
+    "category": "International Border/Conflict Zone",
+    "state": "Ladakh",
+    "riskLevel": "Medium",
+    "source": "India-China Border Documentation",
+    "raw": {
+      "ID": "32",
+      "Name": "Line of Actual Control (LAC) - Ladakh",
+      "Category": "International Border/Conflict Zone",
+      "State": "Ladakh",
+      "Region": "Northern",
+      "Latitude": "34.1526",
+      "Longitude": "77.5771",
+      "Security_Level": "Medium",
+      "Buffer_Zone_Km": "25",
+      "Source": "India-China Border Documentation",
+      "Description": "De facto border between India and China"
+    }
+  },
+  {
+    "id": "security-33",
+    "name": "Parts of Himachal Pradesh",
+    "type": "circle",
+    "coords": [
+      31.1048,
+      77.1734
+    ],
+    "radiusKm": 25.0,
+    "category": "Protected Area - Border Region",
+    "state": "Himachal Pradesh",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "33",
+      "Name": "Parts of Himachal Pradesh",
+      "Category": "Protected Area - Border Region",
+      "State": "Himachal Pradesh",
+      "Region": "Northern",
+      "Latitude": "31.1048",
+      "Longitude": "77.1734",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Areas between Inner Line and International Border"
+    }
+  },
+  {
+    "id": "security-34",
+    "name": "Parts of Jammu & Kashmir",
+    "type": "circle",
+    "coords": [
+      34.0837,
+      74.7973
+    ],
+    "radiusKm": 25.0,
+    "category": "Protected Area - Border Region",
+    "state": "Jammu & Kashmir",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "34",
+      "Name": "Parts of Jammu & Kashmir",
+      "Category": "Protected Area - Border Region",
+      "State": "Jammu & Kashmir",
+      "Region": "Northern",
+      "Latitude": "34.0837",
+      "Longitude": "74.7973",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Areas between Inner Line and International Border"
+    }
+  },
+  {
+    "id": "security-35",
+    "name": "India-Pakistan Border - Punjab",
+    "type": "circle",
+    "coords": [
+      31.1471,
+      75.3412
+    ],
+    "radiusKm": 25.0,
+    "category": "International Border Zone",
+    "state": "Punjab",
+    "riskLevel": "High",
+    "source": "BSF Border Documentation",
+    "raw": {
+      "ID": "35",
+      "Name": "India-Pakistan Border - Punjab",
+      "Category": "International Border Zone",
+      "State": "Punjab",
+      "Region": "Northern",
+      "Latitude": "31.1471",
+      "Longitude": "75.3412",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Border Documentation",
+      "Description": "International border with Pakistan, BSF guarded"
+    }
+  },
+  {
+    "id": "security-36",
+    "name": "Parts of Uttarakhand",
+    "type": "circle",
+    "coords": [
+      30.0668,
+      79.0193
+    ],
+    "radiusKm": 25.0,
+    "category": "Protected Area - Border Region",
+    "state": "Uttarakhand",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "36",
+      "Name": "Parts of Uttarakhand",
+      "Category": "Protected Area - Border Region",
+      "State": "Uttarakhand",
+      "Region": "Northern",
+      "Latitude": "30.0668",
+      "Longitude": "79.0193",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "Areas between Inner Line and International Border"
+    }
+  },
+  {
+    "id": "security-37",
+    "name": "BSF Jammu Frontier",
+    "type": "circle",
+    "coords": [
+      32.7266,
+      74.857
+    ],
+    "radiusKm": 25.0,
+    "category": "Border Security Installation",
+    "state": "Jammu & Kashmir",
+    "riskLevel": "Standard",
+    "source": "BSF Organizational Structure",
+    "raw": {
+      "ID": "37",
+      "Name": "BSF Jammu Frontier",
+      "Category": "Border Security Installation",
+      "State": "Jammu & Kashmir",
+      "Region": "Northern",
+      "Latitude": "32.7266",
+      "Longitude": "74.857",
+      "Security_Level": "Standard",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Organizational Structure",
+      "Description": "BSF Frontier headquarters for J&K border"
+    }
+  },
+  {
+    "id": "security-38",
+    "name": "BSF Kashmir Frontier",
+    "type": "circle",
+    "coords": [
+      34.0837,
+      74.7973
+    ],
+    "radiusKm": 25.0,
+    "category": "Border Security Installation",
+    "state": "Jammu & Kashmir",
+    "riskLevel": "Standard",
+    "source": "BSF Organizational Structure",
+    "raw": {
+      "ID": "38",
+      "Name": "BSF Kashmir Frontier",
+      "Category": "Border Security Installation",
+      "State": "Jammu & Kashmir",
+      "Region": "Northern",
+      "Latitude": "34.0837",
+      "Longitude": "74.7973",
+      "Security_Level": "Standard",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Organizational Structure",
+      "Description": "BSF Frontier headquarters for Kashmir Valley"
+    }
+  },
+  {
+    "id": "security-39",
+    "name": "BSF Jalandhar Frontier",
+    "type": "circle",
+    "coords": [
+      31.326,
+      75.5762
+    ],
+    "radiusKm": 25.0,
+    "category": "Border Security Installation",
+    "state": "Punjab",
+    "riskLevel": "Standard",
+    "source": "BSF Organizational Structure",
+    "raw": {
+      "ID": "39",
+      "Name": "BSF Jalandhar Frontier",
+      "Category": "Border Security Installation",
+      "State": "Punjab",
+      "Region": "Northern",
+      "Latitude": "31.326",
+      "Longitude": "75.5762",
+      "Security_Level": "Standard",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Organizational Structure",
+      "Description": "BSF Frontier headquarters for Punjab border"
+    }
+  },
+  {
+    "id": "security-40",
+    "name": "Kalapani Disputed Territory",
+    "type": "point",
+    "coords": [
+      30.2088,
+      80.9631
+    ],
+    "radiusKm": null,
+    "category": "Disputed Territory",
+    "state": "Uttarakhand",
+    "riskLevel": "Standard",
+    "source": "India-Nepal Territorial Dispute",
+    "raw": {
+      "ID": "40",
+      "Name": "Kalapani Disputed Territory",
+      "Category": "Disputed Territory",
+      "State": "Uttarakhand",
+      "Region": "Northern",
+      "Latitude": "30.2088",
+      "Longitude": "80.9631",
+      "Security_Level": "Standard",
+      "Buffer_Zone_Km": "0",
+      "Source": "India-Nepal Territorial Dispute",
+      "Description": "Territory disputed between India and Nepal"
+    }
+  },
+  {
+    "id": "security-41",
+    "name": "Kerala Sensitive Installation",
+    "type": "point",
+    "coords": [
+      10.8505,
+      76.2711
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Kerala",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "41",
+      "Name": "Kerala Sensitive Installation",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Kerala",
+      "Region": "Southern",
+      "Latitude": "10.8505",
+      "Longitude": "76.2711",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 10 sensitive installations declared prohibited"
+    }
+  },
+  {
+    "id": "security-42",
+    "name": "Kudankulam Nuclear Power Plant",
+    "type": "circle",
+    "coords": [
+      8.1667,
+      77.7
+    ],
+    "radiusKm": 10.0,
+    "category": "Nuclear Installation",
+    "state": "Tamil Nadu",
+    "riskLevel": "High",
+    "source": "Nuclear Power Corporation of India",
+    "raw": {
+      "ID": "42",
+      "Name": "Kudankulam Nuclear Power Plant",
+      "Category": "Nuclear Installation",
+      "State": "Tamil Nadu",
+      "Region": "Southern",
+      "Latitude": "8.1667",
+      "Longitude": "77.7",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "10",
+      "Source": "Nuclear Power Corporation of India",
+      "Description": "Nuclear power plant - sensitive installation"
+    }
+  },
+  {
+    "id": "security-43",
+    "name": "Kalpakkam Nuclear Complex",
+    "type": "circle",
+    "coords": [
+      12.55,
+      80.1833
+    ],
+    "radiusKm": 10.0,
+    "category": "Nuclear Installation",
+    "state": "Tamil Nadu",
+    "riskLevel": "High",
+    "source": "Atomic Energy Commission",
+    "raw": {
+      "ID": "43",
+      "Name": "Kalpakkam Nuclear Complex",
+      "Category": "Nuclear Installation",
+      "State": "Tamil Nadu",
+      "Region": "Southern",
+      "Latitude": "12.55",
+      "Longitude": "80.1833",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "10",
+      "Source": "Atomic Energy Commission",
+      "Description": "Nuclear research and power complex"
+    }
+  },
+  {
+    "id": "security-44",
+    "name": "Telangana Sensitive Installation",
+    "type": "point",
+    "coords": [
+      17.1232,
+      79.2088
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Telangana",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "44",
+      "Name": "Telangana Sensitive Installation",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Telangana",
+      "Region": "Southern",
+      "Latitude": "17.1232",
+      "Longitude": "79.2088",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 10 sensitive installations declared prohibited"
+    }
+  },
+  {
+    "id": "security-45",
+    "name": "Gadchiroli District",
+    "type": "circle",
+    "coords": [
+      20.1667,
+      80.0
+    ],
+    "radiusKm": 5.0,
+    "category": "Conflict-Prone Region - Naxal Affected",
+    "state": "Maharashtra",
+    "riskLevel": "High",
+    "source": "South Asia Terrorism Portal",
+    "raw": {
+      "ID": "45",
+      "Name": "Gadchiroli District",
+      "Category": "Conflict-Prone Region - Naxal Affected",
+      "State": "Maharashtra",
+      "Region": "Western",
+      "Latitude": "20.1667",
+      "Longitude": "80.0",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "5",
+      "Source": "South Asia Terrorism Portal",
+      "Description": "High Naxal activity area"
+    }
+  },
+  {
+    "id": "security-46",
+    "name": "Tarapur Atomic Power Station",
+    "type": "circle",
+    "coords": [
+      19.85,
+      72.6
+    ],
+    "radiusKm": 10.0,
+    "category": "Nuclear Installation",
+    "state": "Maharashtra",
+    "riskLevel": "High",
+    "source": "Nuclear Power Corporation of India",
+    "raw": {
+      "ID": "46",
+      "Name": "Tarapur Atomic Power Station",
+      "Category": "Nuclear Installation",
+      "State": "Maharashtra",
+      "Region": "Western",
+      "Latitude": "19.85",
+      "Longitude": "72.6",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "10",
+      "Source": "Nuclear Power Corporation of India",
+      "Description": "Nuclear power plant - sensitive installation"
+    }
+  },
+  {
+    "id": "security-47",
+    "name": "Bhabha Atomic Research Centre",
+    "type": "circle",
+    "coords": [
+      19.0176,
+      73.0169
+    ],
+    "radiusKm": 10.0,
+    "category": "Nuclear Installation",
+    "state": "Maharashtra",
+    "riskLevel": "High",
+    "source": "Atomic Energy Commission",
+    "raw": {
+      "ID": "47",
+      "Name": "Bhabha Atomic Research Centre",
+      "Category": "Nuclear Installation",
+      "State": "Maharashtra",
+      "Region": "Western",
+      "Latitude": "19.0176",
+      "Longitude": "73.0169",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "10",
+      "Source": "Atomic Energy Commission",
+      "Description": "Nuclear research facility"
+    }
+  },
+  {
+    "id": "security-48",
+    "name": "Rajasthan Sensitive Installation 1",
+    "type": "point",
+    "coords": [
+      26.9124,
+      75.7873
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Rajasthan",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "48",
+      "Name": "Rajasthan Sensitive Installation 1",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Rajasthan",
+      "Region": "Western",
+      "Latitude": "26.9124",
+      "Longitude": "75.7873",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "One of 2 sensitive installations in Rajasthan"
+    }
+  },
+  {
+    "id": "security-49",
+    "name": "Rajasthan Sensitive Installation 2",
+    "type": "point",
+    "coords": [
+      27.0238,
+      74.2179
+    ],
+    "radiusKm": null,
+    "category": "Prohibited Place under Official Secrets Act",
+    "state": "Rajasthan",
+    "riskLevel": "High",
+    "source": "MHA Notification under Official Secrets Act 1923",
+    "raw": {
+      "ID": "49",
+      "Name": "Rajasthan Sensitive Installation 2",
+      "Category": "Prohibited Place under Official Secrets Act",
+      "State": "Rajasthan",
+      "Region": "Western",
+      "Latitude": "27.0238",
+      "Longitude": "74.2179",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "0",
+      "Source": "MHA Notification under Official Secrets Act 1923",
+      "Description": "Second sensitive installation in Rajasthan"
+    }
+  },
+  {
+    "id": "security-50",
+    "name": "Parts of Rajasthan",
+    "type": "circle",
+    "coords": [
+      27.0238,
+      74.2179
+    ],
+    "radiusKm": 25.0,
+    "category": "Protected Area - Border Region",
+    "state": "Rajasthan",
+    "riskLevel": "High",
+    "source": "MHA Protected Areas Order 1958",
+    "raw": {
+      "ID": "50",
+      "Name": "Parts of Rajasthan",
+      "Category": "Protected Area - Border Region",
+      "State": "Rajasthan",
+      "Region": "Western",
+      "Latitude": "27.0238",
+      "Longitude": "74.2179",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "MHA Protected Areas Order 1958",
+      "Description": "40 km belt inside international border"
+    }
+  },
+  {
+    "id": "security-51",
+    "name": "India-Pakistan Border - Rajasthan",
+    "type": "circle",
+    "coords": [
+      27.0238,
+      70.1204
+    ],
+    "radiusKm": 25.0,
+    "category": "International Border Zone",
+    "state": "Rajasthan",
+    "riskLevel": "High",
+    "source": "BSF Border Documentation",
+    "raw": {
+      "ID": "51",
+      "Name": "India-Pakistan Border - Rajasthan",
+      "Category": "International Border Zone",
+      "State": "Rajasthan",
+      "Region": "Western",
+      "Latitude": "27.0238",
+      "Longitude": "70.1204",
+      "Security_Level": "High",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Border Documentation",
+      "Description": "International border with Pakistan, desert region"
+    }
+  },
+  {
+    "id": "security-52",
+    "name": "BSF Gandhinagar Frontier",
+    "type": "circle",
+    "coords": [
+      23.2156,
+      72.6369
+    ],
+    "radiusKm": 25.0,
+    "category": "Border Security Installation",
+    "state": "Gujarat",
+    "riskLevel": "Standard",
+    "source": "BSF Organizational Structure",
+    "raw": {
+      "ID": "52",
+      "Name": "BSF Gandhinagar Frontier",
+      "Category": "Border Security Installation",
+      "State": "Gujarat",
+      "Region": "Western",
+      "Latitude": "23.2156",
+      "Longitude": "72.6369",
+      "Security_Level": "Standard",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Organizational Structure",
+      "Description": "BSF Frontier headquarters for Gujarat border"
+    }
+  },
+  {
+    "id": "security-53",
+    "name": "BSF Jodhpur Frontier",
+    "type": "circle",
+    "coords": [
+      26.2389,
+      73.0243
+    ],
+    "radiusKm": 25.0,
+    "category": "Border Security Installation",
+    "state": "Rajasthan",
+    "riskLevel": "Standard",
+    "source": "BSF Organizational Structure",
+    "raw": {
+      "ID": "53",
+      "Name": "BSF Jodhpur Frontier",
+      "Category": "Border Security Installation",
+      "State": "Rajasthan",
+      "Region": "Western",
+      "Latitude": "26.2389",
+      "Longitude": "73.0243",
+      "Security_Level": "Standard",
+      "Buffer_Zone_Km": "25",
+      "Source": "BSF Organizational Structure",
+      "Description": "BSF Frontier headquarters for Rajasthan border"
+    }
+  }
+]

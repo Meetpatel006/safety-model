@@ -1,0 +1,99 @@
+2025-09-12 11:21:57,062 - INFO - Starting Weather Safety Model Training with Kaggle Dataset...
+2025-09-12 11:21:57,062 - INFO - Loading dataset from: weatherHistory.csv
+2025-09-12 11:21:57,288 - INFO - Loaded dataset with shape: (96453, 12)
+2025-09-12 11:21:57,288 - INFO - Original columns: ['Formatted Date', 'Summary', 'Precip Type', 'Temperature (C)', 'Apparent Temperature (C)', 'Humidity', 'Wind Speed (km/h)', 'Wind Bearing (degrees)', 'Visibility (km)', 'Loud Cover', 'Pressure (millibars)', 'Daily Summary']
+2025-09-12 11:21:57,288 - INFO - Standardized columns: ['formatted_date', 'summary', 'precip_type', 'temperature', 'apparent_temperature', 'humidity', 'wind_speed', 'wind_bearing', 'visibility', 'cloud_cover', 'pressure', 'daily_summary']
+2025-09-12 11:21:57,312 - INFO - Dataset info:
+None
+2025-09-12 11:21:57,312 - INFO - Preprocessing the dataset...
+2025-09-12 11:22:01,457 - WARNING - Error processing date column: Can only use .dt accessor with datetimelike values
+2025-09-12 11:22:01,479 - INFO - Precipitation types found: ['rain' 'snow' 'none']
+2025-09-12 11:22:02,465 - INFO - Preprocessed dataset shape: (96453, 29)
+2025-09-12 11:22:02,465 - INFO - Data preprocessing completed successfully
+2025-09-12 11:22:02,470 - INFO - Creating safety labels based on weather conditions...
+2025-09-12 11:22:06,965 - INFO - Safety labels created successfully
+2025-09-12 11:22:06,972 - INFO - Label distribution:
+safety_category
+Safe              43270
+Very High Risk    23297
+Moderate Risk     17672
+High Risk         12001
+Very Safe           213
+Name: count, dtype: int64
+2025-09-12 11:22:06,974 - INFO - Safety score statistics:
+count    96453.000000
+mean         2.154469
+std          1.234574
+min          0.000000
+25%          1.000000
+50%          2.000000
+75%          3.000000
+max          4.000000
+Name: safety_score, dtype: float64
+2025-09-12 11:22:06,974 - INFO - Preparing features for training...
+2025-09-12 11:22:07,004 - INFO - Selected features: ['temperature', 'apparent_temperature', 'humidity', 'wind_speed', 'wind_bearing', 'visibility', 'cloud_cover', 'pressure', 'precip_rain', 'precip_snow', 'summary_clear', 'summary_rain', 'summary_snow', 'summary_cloudy', 'summary_fog', 'summary_wind', 'daily_summary_clear', 'daily_summary_rain', 'daily_summary_snow', 'daily_summary_cloudy', 'daily_summary_fog', 'daily_summary_wind', 'temp_difference', 'heat_index', 'wind_chill']
+2025-09-12 11:22:07,240 - INFO - Final features prepared. Shape: (96453, 28)
+2025-09-12 11:22:07,249 - INFO - Target distribution: safety_score
+0      213
+1    43270
+2    17672
+3    12001
+4    23297
+Name: count, dtype: int64
+2025-09-12 11:22:07,251 - INFO - Starting model training...
+2025-09-12 11:22:07,307 - INFO - Training set size: 77162
+2025-09-12 11:22:07,307 - INFO - Test set size: 19291
+2025-09-12 11:22:07,364 - INFO - nvidia-smi found at: C:\WINDOWS\system32\nvidia-smi.EXE (GPU driver likely present)
+2025-09-12 11:22:07,364 - INFO - Attempting hyperparameter tuning with XGBoost (GPU)...
+2025-09-12 11:38:31,281 - INFO - GPU training succeeded
+2025-09-12 11:38:31,281 - INFO - Best parameters: {'colsample_bytree': 1.0, 'learning_rate': 0.1, 'max_depth': 15, 'n_estimators': 200, 'subsample': 0.7}
+2025-09-12 11:38:31,281 - INFO - Best cross-validation score: 0.9958
+2025-09-12 11:38:31,281 - INFO - Final XGBoost model tree_method=gpu_hist, predictor=gpu_predictor
+2025-09-12 11:38:31,411 - INFO - Test Accuracy: 0.9965
+2025-09-12 11:38:31,438 - INFO - Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      0.98      0.99        43
+           1       1.00      1.00      1.00      8654
+           2       0.99      0.99      0.99      3534
+           3       0.99      0.99      0.99      2400
+           4       1.00      1.00      1.00      4660
+
+    accuracy                           1.00     19291
+   macro avg       1.00      0.99      0.99     19291
+weighted avg       1.00      1.00      1.00     19291
+
+2025-09-12 11:38:31,444 - INFO - Confusion Matrix:
+[[  42    1    0    0    0]
+ [   0 8645    9    0    0]
+ [   0    5 3513   16    0]
+ [   0    1   15 2377    7]
+ [   0    0    0   14 4646]]
+2025-09-12 11:38:31,459 - INFO - Top 15 Feature Importances:
+                      feature  importance
+20          daily_summary_fog    0.323313
+9                 precip_snow    0.319566
+0                 temperature    0.070000
+21         daily_summary_wind    0.064087
+2                    humidity    0.059993
+19       daily_summary_cloudy    0.034748
+8                 precip_rain    0.024564
+14                summary_fog    0.023427
+5                  visibility    0.012656
+25  temp_humidity_interaction    0.010356
+27         pressure_deviation    0.008921
+23                 heat_index    0.008723
+24                 wind_chill    0.007556
+15               summary_wind    0.006129
+3                  wind_speed    0.004775
+2025-09-12 11:38:31,461 - INFO - Very Safe accuracy: 0.9767
+2025-09-12 11:38:31,464 - INFO - Safe accuracy: 0.9990
+2025-09-12 11:38:31,466 - INFO - Moderate Risk accuracy: 0.9941
+2025-09-12 11:38:31,468 - INFO - High Risk accuracy: 0.9904
+2025-09-12 11:38:31,470 - INFO - Very High Risk accuracy: 0.9970
+2025-09-12 11:38:31,510 - INFO - Model and preprocessing objects saved to weather_safety_model_kaggle.pkl
+2025-09-12 11:38:31,514 - INFO - Feature importance saved to 'feature_importance.csv'
+2025-09-12 11:38:31,519 - WARNING - Missing features: ['precip_rain', 'precip_snow', 'summary_snow', 'summary_cloudy', 'summary_fog', 'summary_wind', 'daily_summary_rain', 'daily_summary_snow', 'daily_summary_cloudy', 'daily_summary_fog', 'daily_summary_wind', 'temp_difference', 'heat_index', 'wind_chill']
+2025-09-12 11:38:31,599 - INFO - Sample prediction: {'safety_score': 0, 'safety_category': 'Very Safe', 'confidence': 0.8558177351951599, 'probabilities': {'Very Safe': 0.8558177351951599, 'Safe': 0.09729982912540436, 'Moderate Risk': 0.012406473979353905, 'High Risk': 0.032724764198064804, 'Very High Risk': 0.0017512456979602575}}
+2025-09-12 11:38:31,599 - INFO - Weather Safety Model training completed successfully!
+2025-09-12 11:38:31,599 - INFO - Final model accuracy: 0.9965

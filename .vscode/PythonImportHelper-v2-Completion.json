@@ -1,0 +1,909 @@
+[
+    {
+        "label": "joblib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "joblib",
+        "description": "joblib",
+        "detail": "joblib",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "random",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "random",
+        "description": "random",
+        "detail": "random",
+        "documentation": {}
+    },
+    {
+        "label": "pandas",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pandas",
+        "description": "pandas",
+        "detail": "pandas",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestClassifier",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "requests",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "requests",
+        "description": "requests",
+        "detail": "requests",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "uvicorn",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uvicorn",
+        "description": "uvicorn",
+        "detail": "uvicorn",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "XGBClassifier",
+        "importPath": "xgboost",
+        "description": "xgboost",
+        "isExtraImport": true,
+        "detail": "xgboost",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleImputer",
+        "importPath": "sklearn.impute",
+        "description": "sklearn.impute",
+        "isExtraImport": true,
+        "detail": "sklearn.impute",
+        "documentation": {}
+    },
+    {
+        "label": "re",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "re",
+        "description": "re",
+        "detail": "re",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "Location",
+        "kind": 6,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "class Location(BaseModel):\n    latitude: float\n    longitude: float\n@app.post(\"/predict\")\ndef predict_safety(loc: Location):\n    features = extract_features(loc.latitude, loc.longitude, geofences)\n    pred_encoded = model.predict([features])[0]\n    pred_label = label_encoder.inverse_transform([pred_encoded])[0]\n    return {\n        \"latitude\": loc.latitude,",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\ndef extract_features(lat, lon, geofences):\n    distances, risks = [], []\n    for fence in geofences:",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "extract_features",
+        "kind": 2,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "def extract_features(lat, lon, geofences):\n    distances, risks = [], []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            dist = haversine_distance(lat, lon, center_lat, center_lon)\n            distances.append(dist)\n            risks.append(fence.get(\"riskLevel\"))\n    if distances:",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "predict_safety",
+        "kind": 2,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "def predict_safety(loc: Location):\n    features = extract_features(loc.latitude, loc.longitude, geofences)\n    pred_encoded = model.predict([features])[0]\n    pred_label = label_encoder.inverse_transform([pred_encoded])[0]\n    return {\n        \"latitude\": loc.latitude,\n        \"longitude\": loc.longitude,\n        \"predicted_risk_label\": pred_label,\n        \"predicted_safety_score\": RISK_SCORE_MAP.get(pred_label, 100),\n        # Provide a 1-100 safety score for compatibility with other models.",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "RISK_SCORE_MAP",
+        "kind": 5,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90,\n    \"Safe\": 100\n}\n# ---------- Load model + encoder ----------\nmodel = joblib.load(\"geofence_safety_model.pkl\")\nlabel_encoder = joblib.load(\"label_encoder.pkl\")",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "model = joblib.load(\"geofence_safety_model.pkl\")\nlabel_encoder = joblib.load(\"label_encoder.pkl\")\n# Load geofences\nwith open(\"geofences.json\", \"r\") as f:\n    geofences = json.load(f)\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "label_encoder",
+        "kind": 5,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "label_encoder = joblib.load(\"label_encoder.pkl\")\n# Load geofences\nwith open(\"geofences.json\", \"r\") as f:\n    geofences = json.load(f)\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "geo fencing.api",
+        "description": "geo fencing.api",
+        "peekOfCode": "app = FastAPI(title=\"GeoFence Safety Score API\")\nclass Location(BaseModel):\n    latitude: float\n    longitude: float\n@app.post(\"/predict\")\ndef predict_safety(loc: Location):\n    features = extract_features(loc.latitude, loc.longitude, geofences)\n    pred_encoded = model.predict([features])[0]\n    pred_label = label_encoder.inverse_transform([pred_encoded])[0]\n    return {",
+        "detail": "geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "geo fencing.dataset",
+        "description": "geo fencing.dataset",
+        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371  # Earth radius in km\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\ndef is_inside_circle(user_lat, user_lon, center_lat, center_lon, radius_km):\n    return haversine_distance(user_lat, user_lon, center_lat, center_lon) <= radius_km\ndef assign_risk(user_lat, user_lon, geofences):",
+        "detail": "geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "is_inside_circle",
+        "kind": 2,
+        "importPath": "geo fencing.dataset",
+        "description": "geo fencing.dataset",
+        "peekOfCode": "def is_inside_circle(user_lat, user_lon, center_lat, center_lon, radius_km):\n    return haversine_distance(user_lat, user_lon, center_lat, center_lon) <= radius_km\ndef assign_risk(user_lat, user_lon, geofences):\n    scores, labels = [], []\n    for fence in geofences:\n        ftype = fence.get(\"type\")\n        risk = fence.get(\"riskLevel\")\n        score = RISK_SCORE_MAP.get(risk, 100)\n        if ftype == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]",
+        "detail": "geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "assign_risk",
+        "kind": 2,
+        "importPath": "geo fencing.dataset",
+        "description": "geo fencing.dataset",
+        "peekOfCode": "def assign_risk(user_lat, user_lon, geofences):\n    scores, labels = [], []\n    for fence in geofences:\n        ftype = fence.get(\"type\")\n        risk = fence.get(\"riskLevel\")\n        score = RISK_SCORE_MAP.get(risk, 100)\n        if ftype == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            if is_inside_circle(user_lat, user_lon, center_lat, center_lon, radius):",
+        "detail": "geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "generate_dataset",
+        "kind": 2,
+        "importPath": "geo fencing.dataset",
+        "description": "geo fencing.dataset",
+        "peekOfCode": "def generate_dataset(geofences, n_samples_per_fence=1000):\n    data = []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            # Sample uniformly within a square bounding box around the circle\n            for _ in range(n_samples_per_fence):\n                lat = center_lat + random.uniform(-0.1, 0.1)  # tweak range based on radius\n                lon = center_lon + random.uniform(-0.1, 0.1)",
+        "detail": "geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "RISK_SCORE_MAP",
+        "kind": 5,
+        "importPath": "geo fencing.dataset",
+        "description": "geo fencing.dataset",
+        "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90\n}\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371  # Earth radius in km\n    dlat = radians(lat2 - lat1)",
+        "detail": "geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "geo fencing.feature",
+        "description": "geo fencing.feature",
+        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\n# ---------- Feature Engineering ----------\ndef add_features(df, geofences):\n    \"\"\"",
+        "detail": "geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "add_features",
+        "kind": 2,
+        "importPath": "geo fencing.feature",
+        "description": "geo fencing.feature",
+        "peekOfCode": "def add_features(df, geofences):\n    \"\"\"\n    Add geospatial features for each sample.\n    Features:\n      - min_distance_to_geofence\n      - inside_any_geofence (binary)\n      - closest_geofence_risk (encoded as numeric score)\n    \"\"\"\n    min_distances = []\n    inside_flags = []",
+        "detail": "geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "RISK_SCORE_MAP",
+        "kind": 5,
+        "importPath": "geo fencing.feature",
+        "description": "geo fencing.feature",
+        "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90,\n    \"Safe\": 100\n}\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371",
+        "detail": "geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "df = pd.read_csv(\"geofence_features.csv\")\n# Features and target\nX = df[[\"latitude\", \"longitude\", \"min_distance_to_geofence\",\n        \"inside_any_geofence\", \"closest_geofence_risk_score\"]]\ny = df[\"risk_label\"]\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "X = df[[\"latitude\", \"longitude\", \"min_distance_to_geofence\",\n        \"inside_any_geofence\", \"closest_geofence_risk_score\"]]\ny = df[\"risk_label\"]\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "y = df[\"risk_label\"]\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)\n# ---------- Model ----------\nmodel = RandomForestClassifier(",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "le",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "le = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)\n# ---------- Model ----------\nmodel = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "y_encoded",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "y_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)\n# ---------- Model ----------\nmodel = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,\n    random_state=42,",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "model",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "model = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,\n    random_state=42,\n    class_weight=\"balanced\"\n)\nmodel.fit(X_train, y_train)\n# ---------- Evaluation ----------\ny_pred = model.predict(X_test)\nprint(classification_report(y_test, y_pred, target_names=le.classes_))",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "y_pred = model.predict(X_test)\nprint(classification_report(y_test, y_pred, target_names=le.classes_))\n# ---------- Save Model ----------\njoblib.dump(model, \"geofence_safety_model.pkl\")\njoblib.dump(le, \"label_encoder.pkl\")\nprint(\"Model and label encoder saved.\")",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherInput",
+        "kind": 6,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "class WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0, le=1)\n    pressure: float = Field(..., description=\"Atmospheric pressure in millibars\", ge=900, le=1100)",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "OpenMeteoInput",
+        "kind": 6,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "class OpenMeteoInput(BaseModel):\n    \"\"\"Input schema for fetching data from Open-Meteo API\"\"\"\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\n    days: Optional[int] = Field(7, description=\"Number of days to forecast\", ge=1, le=16)\nclass SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    safety_score: int = Field(..., description=\"Safety score (0-4)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    safety_category: str = Field(..., description=\"Safety category name\")",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "SafetyPrediction",
+        "kind": 6,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "class SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    safety_score: int = Field(..., description=\"Safety score (0-4)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    safety_category: str = Field(..., description=\"Safety category name\")\n    confidence: float = Field(..., description=\"Prediction confidence (0-1)\")\n    probabilities: Dict[str, float] = Field(..., description=\"Probability for each safety category\")\n    input_features: Dict[str, float] = Field(..., description=\"Processed input features\")\ndef load_model():\n    \"\"\"Load the trained model and preprocessing objects\"\"\"",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "load_model",
+        "kind": 2,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "def load_model():\n    \"\"\"Load the trained model and preprocessing objects\"\"\"\n    global model_instance, scaler_instance, feature_names\n    model_path = \"weather_safety_model_kaggle.pkl\"\n    if not os.path.exists(model_path):\n        logger.error(f\"Model file not found: {model_path}\")\n        return False\n    try:\n        model_data = joblib.load(model_path)\n        model_instance = model_data['model']",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "startup_event",
+        "kind": 2,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "def startup_event():\n    \"\"\"FastAPI startup event: attempt to load the model and log status.\"\"\"\n    loaded = load_model()\n    if not loaded:\n        logger.warning(\"Model failed to load during startup. Ensure 'weather_safety_model_kaggle.pkl' exists in the same directory as 'api.py' and contains 'model', 'scaler', and 'feature_names'.\")\ndef prepare_features(weather_data: dict) -> pd.DataFrame:\n    \"\"\"Prepare features for prediction in the same format as training\"\"\"\n    df = pd.DataFrame([weather_data])\n    # Create derived features that were created during training\n    if 'temperature' in df.columns and 'apparent_temperature' in df.columns:",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "prepare_features",
+        "kind": 2,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "def prepare_features(weather_data: dict) -> pd.DataFrame:\n    \"\"\"Prepare features for prediction in the same format as training\"\"\"\n    df = pd.DataFrame([weather_data])\n    # Create derived features that were created during training\n    if 'temperature' in df.columns and 'apparent_temperature' in df.columns:\n        df['temp_difference'] = df['apparent_temperature'] - df['temperature']\n    if 'temperature' in df.columns and 'humidity' in df.columns:\n        # Heat index approximation\n        df['heat_index'] = df['temperature'] + 0.5 * (df['humidity'] * 100 - 50)\n    if 'wind_speed' in df.columns and 'temperature' in df.columns:",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "fetch_openmeteo_data",
+        "kind": 2,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "def fetch_openmeteo_data(latitude: float, longitude: float, days: int = 7) -> dict:\n    \"\"\"Fetch weather data from Open-Meteo API\"\"\"\n    end_date = datetime.now().strftime('%Y-%m-%d')\n    start_date = (datetime.now() - timedelta(days=days)).strftime('%Y-%m-%d')\n    url = \"https://api.open-meteo.com/v1/forecast\"\n    params = {\n        \"latitude\": latitude,\n        \"longitude\": longitude,\n        \"start_date\": start_date,\n        \"end_date\": end_date,",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# Initialize FastAPI app\napp = FastAPI(\n    title=\"Weather Safety Prediction API\",\n    description=\"API for predicting weather safety scores based on meteorological conditions\",\n    version=\"1.0.0\",\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\n# Add CORS middleware",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "app = FastAPI(\n    title=\"Weather Safety Prediction API\",\n    description=\"API for predicting weather safety scores based on meteorological conditions\",\n    version=\"1.0.0\",\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\n# Add CORS middleware\napp.add_middleware(\n    CORSMiddleware,",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "model_instance",
+        "kind": 5,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "model_instance = None\nscaler_instance = None\nfeature_names = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "scaler_instance",
+        "kind": 5,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "scaler_instance = None\nfeature_names = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "feature_names",
+        "kind": 5,
+        "importPath": "weather model.api",
+        "description": "weather model.api",
+        "peekOfCode": "feature_names = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0, le=50)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0, le=1)",
+        "detail": "weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherSafetyModel",
+        "kind": 6,
+        "importPath": "weather model.training",
+        "description": "weather model.training",
+        "peekOfCode": "class WeatherSafetyModel:\n    def __init__(self):\n        self.model = None\n        self.scaler = StandardScaler()\n        self.label_encoder = LabelEncoder()\n        self.feature_names = None\n        self.precip_encoder = LabelEncoder()\n    def fetch_openmeteo_data(self, latitude=40.7128, longitude=-74.0060, days=30):\n        \"\"\"\n        Fetch weather data from Open-Meteo API",
+        "detail": "weather model.training",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "weather model.training",
+        "description": "weather model.training",
+        "peekOfCode": "def main():\n    \"\"\"\n    Main execution function for training on Kaggle dataset\n    \"\"\"\n    logger.info(\"Starting Weather Safety Model Training with Kaggle Dataset...\")\n    # Initialize the model\n    weather_model = WeatherSafetyModel()\n    # IMPORTANT: Replace with your actual dataset path\n    dataset_path = \"weatherHistory.csv\"  # Update this path\n    # Load the Kaggle dataset",
+        "detail": "weather model.training",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "weather model.training",
+        "description": "weather model.training",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass WeatherSafetyModel:\n    def __init__(self):\n        self.model = None\n        self.scaler = StandardScaler()\n        self.label_encoder = LabelEncoder()\n        self.feature_names = None\n        self.precip_encoder = LabelEncoder()\n    def fetch_openmeteo_data(self, latitude=40.7128, longitude=-74.0060, days=30):\n        \"\"\"",
+        "detail": "weather model.training",
+        "documentation": {}
+    },
+    {
+        "label": "test_health_check",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_health_check():\n    \"\"\"Test the health check endpoint\"\"\"\n    print(\"=== Health Check ===\")\n    response = requests.get(f\"{BASE_URL}/health\")\n    print(f\"Status: {response.status_code}\")\n    print(f\"Response: {response.json()}\")\n    print()\ndef test_model_info():\n    \"\"\"Get model information\"\"\"\n    print(\"=== Model Info ===\")",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_info",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_model_info():\n    \"\"\"Get model information\"\"\"\n    print(\"=== Model Info ===\")\n    response = requests.get(f\"{BASE_URL}/model/info\")\n    print(f\"Status: {response.status_code}\")\n    if response.status_code == 200:\n        model_info = response.json()\n        print(f\"Model Type: {model_info['model_type']}\")\n        print(f\"Features Count: {model_info['features_count']}\")\n        print(f\"Safety Categories: {model_info['safety_categories']}\")",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_basic_prediction",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_basic_prediction():\n    \"\"\"Test basic weather prediction\"\"\"\n    print(\"=== Basic Prediction ===\")\n    # Example: Pleasant weather\n    weather_data = {\n        \"temperature\": 22.0,\n        \"apparent_temperature\": 25.0,\n        \"humidity\": 0.6,  # 60%\n        \"wind_speed\": 8.0,  # km/h\n        \"wind_bearing\": 180.0,",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_extreme_weather",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_extreme_weather():\n    \"\"\"Test prediction with extreme weather conditions\"\"\"\n    print(\"=== Extreme Weather Prediction ===\")\n    # Example: Dangerous conditions\n    weather_data = {\n        \"temperature\": -10.0,  # Very cold\n        \"apparent_temperature\": -15.0,\n        \"humidity\": 0.95,  # Very humid\n        \"wind_speed\": 80.0,  # Very strong wind\n        \"wind_bearing\": 270.0,",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_openmeteo_integration",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_openmeteo_integration():\n    \"\"\"Test Open-Meteo API integration\"\"\"\n    print(\"=== Open-Meteo Integration ===\")\n    # Example: Weather for New York City\n    location_data = {\n        \"latitude\": 40.7128,\n        \"longitude\": -74.0060,\n        \"days\": 3\n    }\n    response = requests.post(f\"{BASE_URL}/predict/openmeteo\", json=location_data)",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_batch_prediction",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_batch_prediction():\n    \"\"\"Test batch prediction with multiple weather conditions\"\"\"\n    print(\"=== Batch Prediction ===\")\n    weather_batch = [\n        {\n            \"temperature\": 25.0,\n            \"humidity\": 0.5,\n            \"wind_speed\": 5.0,\n            \"wind_bearing\": 180.0,\n            \"visibility\": 20.0,",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_input_validation",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def test_input_validation():\n    \"\"\"Test input validation with invalid data\"\"\"\n    print(\"=== Input Validation Test ===\")\n    # Invalid temperature (too high)\n    invalid_data = {\n        \"temperature\": 100.0,  # Too high\n        \"humidity\": 0.6,\n        \"wind_speed\": 10.0,\n        \"wind_bearing\": 180.0,\n        \"visibility\": 15.0,",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "def main():\n    \"\"\"Run all tests\"\"\"\n    print(\"Weather Safety API Testing\")\n    print(\"=\" * 50)\n    print()\n    try:\n        test_health_check()\n        test_model_info()\n        test_basic_prediction()\n        test_extreme_weather()",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URL",
+        "kind": 5,
+        "importPath": "weather model.use_api",
+        "description": "weather model.use_api",
+        "peekOfCode": "BASE_URL = \"http://localhost:8000\"\ndef test_health_check():\n    \"\"\"Test the health check endpoint\"\"\"\n    print(\"=== Health Check ===\")\n    response = requests.get(f\"{BASE_URL}/health\")\n    print(f\"Status: {response.status_code}\")\n    print(f\"Response: {response.json()}\")\n    print()\ndef test_model_info():\n    \"\"\"Get model information\"\"\"",
+        "detail": "weather model.use_api",
+        "documentation": {}
+    }
+]

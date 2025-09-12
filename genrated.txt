@@ -1,0 +1,1371 @@
+"""
+SIH25002: Mock Dataset Generators for AI Models
+Smart Tourist Safety Monitoring & Incident Response System
+
+This module generates realistic mock datasets for training various AI models
+including safety scoring, incident prediction, anomaly detection, and NLP tasks.
+"""
+
+import pandas as pd
+import numpy as np
+import random
+import uuid
+
+from datetime import datetime, timedelta
+from typing import List, Dict, Tuple
+import random
+from datetime import datetime, timedelta
+import json
+from typing import List, Dict, Tuple
+import uuid
+
+
+class MockDataGenerator:
+    """Base class for generating mock tourism safety data"""
+    
+    def __init__(self, seed: int = 42):
+        random.seed(seed)
+        np.random.seed(seed)
+        
+        # Northeast India locations (major tourist destinations)
+        self.ner_locations = {
+            'Shillong': {'lat': 25.5788, 'lon': 91.8933, 'state': 'Meghalaya', 'risk_base': 0.2},
+            'Guwahati': {'lat': 26.1445, 'lon': 91.7362, 'state': 'Assam', 'risk_base': 0.3},
+            'Gangtok': {'lat': 27.3389, 'lon': 88.6065, 'state': 'Sikkim', 'risk_base': 0.4},
+            'Imphal': {'lat': 24.8170, 'lon': 93.9368, 'state': 'Manipur', 'risk_base': 0.5},
+            'Aizawl': {'lat': 23.7307, 'lon': 92.7173, 'state': 'Mizoram', 'risk_base': 0.6},
+            'Kohima': {'lat': 25.6751, 'lon': 94.1086, 'state': 'Nagaland', 'risk_base': 0.4},
+            'Agartala': {'lat': 23.8315, 'lon': 91.2868, 'state': 'Tripura', 'risk_base': 0.3},
+            'Itanagar': {'lat': 27.0844, 'lon': 93.6053, 'state': 'Arunachal Pradesh', 'risk_base': 0.7},
+            'Kaziranga': {'lat': 26.5775, 'lon': 93.1714, 'state': 'Assam', 'risk_base': 0.8},  # Wildlife area
+            'Tawang': {'lat': 27.5856, 'lon': 91.8697, 'state': 'Arunachal Pradesh', 'risk_base': 0.9}  # High altitude
+        }
+        
+        # Risk zone types and their characteristics
+        self.risk_zones = {
+            'safe': {'multiplier': 0.1, 'incidents': ['minor_injury', 'lost']},
+            'low_risk': {'multiplier': 0.3, 'incidents': ['weather_delay', 'minor_injury', 'lost']},
+            'medium_risk': {'multiplier': 0.5, 'incidents': ['weather_emergency', 'wildlife_encounter', 'medical_emergency']},
+            'high_risk': {'multiplier': 0.7, 'incidents': ['natural_disaster', 'wildlife_attack', 'severe_medical']},
+            'critical': {'multiplier': 0.9, 'incidents': ['natural_disaster', 'wildlife_attack', 'severe_medical', 'missing_person']}
+        }
+        
+        # Weather conditions
+        self.weather_conditions = {
+            'clear': {'risk_factor': 0.1, 'prob': 0.4},
+            'cloudy': {'risk_factor': 0.2, 'prob': 0.3},
+            'light_rain': {'risk_factor': 0.4, 'prob': 0.15},
+            'heavy_rain': {'risk_factor': 0.7, 'prob': 0.08},
+            'storm': {'risk_factor': 0.9, 'prob': 0.04},
+            'fog': {'risk_factor': 0.6, 'prob': 0.03}
+        }
+        
+        # Tourist demographics
+        self.demographics = {
+            'age_groups': ['18-25', '26-35', '36-50', '51-65', '65+'],
+            'travel_types': ['solo', 'couple', 'family', 'group', 'business'],
+            'experience_levels': ['first_time', 'occasional', 'frequent', 'expert'],
+            'states_of_origin': ['Delhi', 'Mumbai', 'Bangalore', 'Kolkata', 'Chennai', 'Pune', 'Hyderabad', 'Ahmedabad']
+        }
+
+    def generate_base_tourist_profiles(self, n: int) -> pd.DataFrame:
+        """Generate base tourist profile data"""
+        profiles = []
+        
+        for _ in range(n):
+            profile = {
+                'tourist_id': str(uuid.uuid4()),
+                'name': f"Tourist_{random.randint(1000, 9999)}",
+                'age_group': random.choice(self.demographics['age_groups']),
+                'travel_type': random.choice(self.demographics['travel_types']),
+                'group_size': self._get_group_size(),
+                'experience_level': random.choice(self.demographics['experience_levels']),
+                'origin_state': random.choice(self.demographics['states_of_origin']),
+                'medical_conditions': random.choice([None, 'diabetes', 'hypertension', 'asthma', 'heart_condition']) if random.random() < 0.15 else None,
+                'has_insurance': True if random.random() < 0.7 else False,
+                'language_preference': random.choice(['english', 'hindi', 'regional']),
+                'created_at': datetime.now() - timedelta(days=random.randint(0, 30))
+            }
+            profiles.append(profile)
+        
+        return pd.DataFrame(profiles)
+    
+    def _get_group_size(self) -> int:
+        """Generate realistic group sizes based on travel type"""
+        travel_type = random.choice(self.demographics['travel_types'])
+        if travel_type == 'solo':
+            return 1
+        elif travel_type == 'couple':
+            return 2
+        elif travel_type == 'family':
+            return random.randint(3, 6)
+        elif travel_type == 'group':
+            return random.randint(4, 12)
+        else:  # business
+            return random.randint(1, 3)
+
+    # --- Shared helpers so all generators can use them ---
+    def _get_distance_to_hospital(self, location: str) -> float:
+        """Get approximate distance to nearest hospital"""
+        major_cities = ['Shillong', 'Guwahati', 'Gangtok', 'Imphal', 'Aizawl', 'Agartala']
+        if location in major_cities:
+            return random.uniform(0.5, 5.0)
+        return random.uniform(5.0, 25.0)
+
+    def _get_distance_to_police(self, location: str) -> float:
+        """Get approximate distance to nearest police station"""
+        major_cities = ['Shillong', 'Guwahati', 'Gangtok', 'Imphal', 'Aizawl', 'Agartala']
+        if location in major_cities:
+            return random.uniform(0.2, 3.0)
+        return random.uniform(2.0, 15.0)
+
+    def _get_tourist_density(self, location: str, timestamp: datetime) -> int:
+        """Get tourist density (tourists per sq km)"""
+        popular_locations = ['Shillong', 'Gangtok', 'Kaziranga', 'Tawang']
+        base_density = 50 if location in popular_locations else 20
+        if timestamp.month in [10, 11, 12, 1, 2, 3]:
+            base_density *= 1.5
+        if timestamp.weekday() >= 5:
+            base_density *= 1.3
+        return int(base_density + np.random.normal(0, 10))
+
+    def _get_local_event_risk(self, timestamp: datetime) -> float:
+        """Get risk factor due to local events"""
+        if random.random() < 0.1:
+            return random.uniform(0.1, 0.5)
+        return 0.0
+
+    def _is_holiday(self, timestamp: datetime) -> bool:
+        """Determine if date is a holiday (simplified)"""
+        holidays = [
+            (1, 26), (8, 15), (10, 2),  # National holidays
+            (3, 15), (4, 14), (5, 1),   # Regional approximations
+        ]
+        return (timestamp.month, timestamp.day) in holidays or random.random() < 0.05
+
+
+class SafetyScoringDataGenerator(MockDataGenerator):
+    """Generate dataset for safety scoring model training"""
+    
+    def generate_dataset(self, n_records: int = 10000) -> pd.DataFrame:
+        """Generate safety scoring training dataset"""
+        data = []
+        
+        for _ in range(n_records):
+            # Select random location and time
+            location_name = random.choice(list(self.ner_locations.keys()))
+            location_info = self.ner_locations[location_name]
+            
+            # Generate temporal features
+            timestamp = datetime.now() - timedelta(
+                days=random.randint(0, 365),
+                hours=random.randint(0, 23),
+                minutes=random.randint(0, 59)
+            )
+            
+            # Location features with some random variation
+            lat = location_info['lat'] + np.random.normal(0, 0.01)  # ~1km variation
+            lon = location_info['lon'] + np.random.normal(0, 0.01)
+            
+            # Weather features
+            weather = self._select_weather_condition()
+            
+            # Tourist features
+            age_group = random.choice(self.demographics['age_groups'])
+            travel_type = random.choice(self.demographics['travel_types'])
+            group_size = self._get_group_size_from_type(travel_type)
+            experience_level = random.choice(self.demographics['experience_levels'])
+            
+            # Risk zone classification
+            risk_zone = self._classify_risk_zone(location_info['risk_base'], weather, timestamp)
+            
+            # Calculate safety score (target variable)
+            safety_score = self._calculate_safety_score(
+                location_info, weather, timestamp, age_group, 
+                travel_type, group_size, experience_level, risk_zone
+            )
+            
+            record = {
+                'timestamp': timestamp,
+                'latitude': lat,
+                'longitude': lon,
+                'location_name': location_name,
+                'state': location_info['state'],
+                'hour': timestamp.hour,
+                'day_of_week': timestamp.weekday(),
+                'month': timestamp.month,
+                'is_weekend': timestamp.weekday() >= 5,
+                'is_holiday': self._is_holiday(timestamp),
+                'weather_condition': weather,
+                'temperature': self._generate_temperature(location_name, timestamp.month),
+                'humidity': random.randint(40, 90),
+                'visibility_km': self._get_visibility(weather),
+                'age_group': age_group,
+                'travel_type': travel_type,
+                'group_size': group_size,
+                'experience_level': experience_level,
+                'has_medical_condition': 1 if random.random() < 0.15 else 0,
+                'has_insurance': 1 if random.random() < 0.7 else 0,
+                'risk_zone': risk_zone,
+                'distance_from_hospital': self._get_distance_to_hospital(location_name),
+                'distance_from_police': self._get_distance_to_police(location_name),
+                'tourist_density': self._get_tourist_density(location_name, timestamp),
+                'local_event_risk': self._get_local_event_risk(timestamp),
+                'safety_score': safety_score  # Target variable
+            }
+            
+            data.append(record)
+        
+        return pd.DataFrame(data)
+    
+    def _select_weather_condition(self) -> str:
+        """Select weather condition based on probability"""
+        conditions = list(self.weather_conditions.keys())
+        probabilities = [self.weather_conditions[c]['prob'] for c in conditions]
+        return np.random.choice(conditions, p=probabilities)
+    
+    def _get_group_size_from_type(self, travel_type: str) -> int:
+        """Get group size based on travel type"""
+        if travel_type == 'solo': return 1
+        elif travel_type == 'couple': return 2
+        elif travel_type == 'family': return random.randint(3, 6)
+        elif travel_type == 'group': return random.randint(4, 12)
+        else: return random.randint(1, 3)
+    
+    def _classify_risk_zone(self, base_risk: float, weather: str, timestamp: datetime) -> str:
+        """Classify location into risk zones"""
+        risk_factor = base_risk + self.weather_conditions[weather]['risk_factor']
+        
+        # Night time increases risk
+        if 22 <= timestamp.hour or timestamp.hour <= 5:
+            risk_factor += 0.2
+        
+        if risk_factor < 0.2: return 'safe'
+        elif risk_factor < 0.4: return 'low_risk'
+        elif risk_factor < 0.6: return 'medium_risk'
+        elif risk_factor < 0.8: return 'high_risk'
+        else: return 'critical'
+    
+    def _calculate_safety_score(self, location_info: Dict, weather: str, timestamp: datetime,
+                              age_group: str, travel_type: str, group_size: int,
+                              experience_level: str, risk_zone: str) -> float:
+        """Calculate safety score (0-100) based on various factors"""
+        base_score = 100.0
+        
+        # Location risk
+        base_score -= location_info['risk_base'] * 30
+        
+        # Weather impact
+        base_score -= self.weather_conditions[weather]['risk_factor'] * 25
+        
+        # Time of day impact
+        if 22 <= timestamp.hour or timestamp.hour <= 5:
+            base_score -= 15  # Night time
+        elif 6 <= timestamp.hour <= 18:
+            base_score += 5   # Day time bonus
+        
+        # Demographics impact
+        if age_group in ['18-25', '65+']:
+            base_score -= 5  # Higher risk age groups
+        
+        if travel_type == 'solo':
+            base_score -= 10  # Solo travel is riskier
+        elif travel_type == 'group' and group_size > 8:
+            base_score -= 5   # Large groups harder to manage
+        
+        # Experience bonus
+        experience_bonus = {'first_time': -10, 'occasional': -5, 'frequent': 0, 'expert': 5}
+        base_score += experience_bonus[experience_level]
+        
+        # Risk zone penalty
+        zone_penalty = {'safe': 0, 'low_risk': -5, 'medium_risk': -15, 'high_risk': -25, 'critical': -40}
+        base_score += zone_penalty[risk_zone]
+        
+        # Add some random noise
+        base_score += np.random.normal(0, 3)
+        
+        # Ensure score is between 0-100
+        return max(0, min(100, base_score))
+    
+    def _generate_temperature(self, location: str, month: int) -> float:
+        """Generate realistic temperature based on location and season"""
+        base_temps = {
+            'Shillong': 20, 'Guwahati': 26, 'Gangtok': 15, 'Imphal': 22,
+            'Aizawl': 21, 'Kohima': 19, 'Agartala': 25, 'Itanagar': 23,
+            'Kaziranga': 25, 'Tawang': 10
+        }
+        
+        base_temp = base_temps.get(location, 22)
+        
+        # Seasonal variation
+        if month in [12, 1, 2]:  # Winter
+            temp_adjustment = -5
+        elif month in [3, 4, 5]:  # Spring
+            temp_adjustment = 2
+        elif month in [6, 7, 8, 9]:  # Monsoon/Summer
+            temp_adjustment = 0
+        else:  # Post-monsoon
+            temp_adjustment = -2
+        
+        return base_temp + temp_adjustment + np.random.normal(0, 3)
+    
+    def _get_visibility(self, weather: str) -> float:
+        """Get visibility based on weather condition"""
+        visibility_map = {
+            'clear': random.uniform(10, 15),
+            'cloudy': random.uniform(8, 12),
+            'light_rain': random.uniform(5, 8),
+            'heavy_rain': random.uniform(1, 3),
+            'storm': random.uniform(0.5, 2),
+            'fog': random.uniform(0.1, 1)
+        }
+        return visibility_map[weather]
+    
+    def _is_holiday(self, timestamp: datetime) -> bool:
+        """Determine if date is a holiday (simplified)"""
+        # Major Indian holidays (simplified)
+        holidays = [
+            (1, 26), (8, 15), (10, 2),  # National holidays
+            (3, 15), (4, 14), (5, 1),   # Regional festivals (approximate)
+        ]
+        return (timestamp.month, timestamp.day) in holidays or random.random() < 0.05
+    
+    def _get_distance_to_hospital(self, location: str) -> float:
+        """Get approximate distance to nearest hospital"""
+        # Major cities have closer hospitals
+        major_cities = ['Shillong', 'Guwahati', 'Gangtok', 'Imphal', 'Aizawl', 'Agartala']
+        if location in major_cities:
+            return random.uniform(0.5, 5.0)
+        else:
+            return random.uniform(5.0, 25.0)
+    
+    def _get_distance_to_police(self, location: str) -> float:
+        """Get approximate distance to nearest police station"""
+        major_cities = ['Shillong', 'Guwahati', 'Gangtok', 'Imphal', 'Aizawl', 'Agartala']
+        if location in major_cities:
+            return random.uniform(0.2, 3.0)
+        else:
+            return random.uniform(2.0, 15.0)
+    
+    def _get_tourist_density(self, location: str, timestamp: datetime) -> int:
+        """Get tourist density (tourists per sq km)"""
+        popular_locations = ['Shillong', 'Gangtok', 'Kaziranga', 'Tawang']
+        base_density = 50 if location in popular_locations else 20
+        
+        # Peak season adjustment
+        if timestamp.month in [10, 11, 12, 1, 2, 3]:  # Peak season
+            base_density *= 1.5
+        
+        # Weekend adjustment
+        if timestamp.weekday() >= 5:
+            base_density *= 1.3
+        
+        return int(base_density + np.random.normal(0, 10))
+    
+    def _get_local_event_risk(self, timestamp: datetime) -> float:
+        """Get risk factor due to local events"""
+        # Random events that might affect safety
+        if random.random() < 0.1:  # 10% chance of some local event
+            return random.uniform(0.1, 0.5)
+        return 0.0
+
+
+class IncidentPredictionDataGenerator(MockDataGenerator):
+    """Generate dataset for incident prediction model training"""
+    
+    def generate_movement_dataset(self, n_tourists: int = 1000, 
+                                days_per_tourist: int = 5) -> pd.DataFrame:
+        """Generate movement pattern data for incident prediction"""
+        movement_data = []
+        
+        for tourist_id in range(n_tourists):
+            # Generate a tourist profile
+            profile = self._generate_tourist_profile(tourist_id)
+            
+            # Generate movement data for multiple days
+            for day in range(days_per_tourist):
+                daily_movements = self._generate_daily_movement(profile, day)
+                movement_data.extend(daily_movements)
+        
+        return pd.DataFrame(movement_data)
+    
+    def _generate_tourist_profile(self, tourist_id: int) -> Dict:
+        """Generate a tourist profile"""
+        return {
+            'tourist_id': f"tourist_{tourist_id}",
+            'age_group': random.choice(self.demographics['age_groups']),
+            'experience_level': random.choice(self.demographics['experience_levels']),
+            'travel_type': random.choice(self.demographics['travel_types']),
+            'risk_tolerance': random.choice(['low', 'medium', 'high']),
+            'planned_locations': random.sample(list(self.ner_locations.keys()), 
+                                             random.randint(2, 5))
+        }
+    
+    def _generate_daily_movement(self, profile: Dict, day: int) -> List[Dict]:
+        """Generate hourly movement data for a day"""
+        movements = []
+        current_location = random.choice(profile['planned_locations'])
+        base_coords = self.ner_locations[current_location]
+        
+        # Start from hotel/accommodation
+        current_lat = base_coords['lat'] + np.random.normal(0, 0.005)
+        current_lon = base_coords['lon'] + np.random.normal(0, 0.005)
+        
+        base_date = datetime.now() - timedelta(days=30-day)
+        
+        # Generate movements every 30 minutes
+        for hour in range(0, 24):
+            for minute in [0, 30]:
+                timestamp = base_date.replace(hour=hour, minute=minute)
+                
+                # Determine if tourist is active (awake and moving)
+                is_active = self._is_tourist_active(hour, profile)
+                
+                if is_active:
+                    # Movement patterns based on time and tourist type
+                    movement = self._calculate_movement(hour, profile, current_lat, current_lon)
+                    current_lat, current_lon = movement['lat'], movement['lon']
+                
+                # Determine if any incident occurred
+                incident_data = self._check_incident_occurrence(
+                    timestamp, current_lat, current_lon, profile, is_active
+                )
+                
+                movement_record = {
+                    'tourist_id': profile['tourist_id'],
+                    'timestamp': timestamp,
+                    'latitude': current_lat,
+                    'longitude': current_lon,
+                    'location_name': current_location,
+                    'hour': hour,
+                    'day_of_week': timestamp.weekday(),
+                    'is_active': is_active,
+                    'speed_kmh': movement.get('speed', 0) if is_active else 0,
+                    'distance_from_planned': self._distance_from_planned_route(
+                        current_lat, current_lon, profile, timestamp
+                    ),
+                    'time_since_last_checkin': self._get_time_since_checkin(timestamp),
+                    'battery_level': max(10, 100 - (hour * 3) + random.randint(-5, 5)),
+                    'signal_strength': random.randint(1, 5),
+                    'weather_condition': random.choice(list(self.weather_conditions.keys())),
+                    **incident_data
+                }
+                
+                movements.append(movement_record)
+        
+        return movements
+    
+    def _is_tourist_active(self, hour: int, profile: Dict) -> bool:
+        """Determine if tourist is active based on time and profile"""
+        if 23 <= hour or hour <= 5:
+            return False  # Sleeping hours
+        
+        # Activity probability based on time
+        activity_prob = {
+            6: 0.3, 7: 0.6, 8: 0.8, 9: 0.9, 10: 0.95,
+            11: 0.98, 12: 0.95, 13: 0.9, 14: 0.95, 15: 0.98,
+            16: 0.95, 17: 0.9, 18: 0.8, 19: 0.7, 20: 0.5,
+            21: 0.3, 22: 0.1
+        }
+        
+        base_prob = activity_prob.get(hour, 0.1)
+        
+        # Adjust based on tourist profile
+        if profile['experience_level'] == 'expert':
+            base_prob *= 1.2
+        elif profile['experience_level'] == 'first_time':
+            base_prob *= 0.8
+        
+        return random.random() < base_prob
+    
+    def _calculate_movement(self, hour: int, profile: Dict, 
+                          current_lat: float, current_lon: float) -> Dict:
+        """Calculate movement based on tourist behavior"""
+        # Movement distance based on time and activity
+        if 9 <= hour <= 17:  # Active sightseeing hours
+            max_distance = 0.01  # ~1km
+            speed_range = (2, 15)  # 2-15 kmph
+        else:
+            max_distance = 0.005  # ~500m
+            speed_range = (1, 5)   # 1-5 kmph
+        
+        # Random movement with some purpose
+        direction = random.uniform(0, 2 * np.pi)
+        distance = random.uniform(0, max_distance)
+        
+        new_lat = current_lat + distance * np.cos(direction)
+        new_lon = current_lon + distance * np.sin(direction)
+        
+        # Calculate speed
+        speed = random.uniform(*speed_range)
+        
+        return {
+            'lat': new_lat,
+            'lon': new_lon,
+            'speed': speed
+        }
+    
+    def _distance_from_planned_route(self, lat: float, lon: float, 
+                                   profile: Dict, timestamp: datetime) -> float:
+        """Calculate distance from planned route (simplified)"""
+        # Simplified: distance from nearest planned location
+        min_distance = float('inf')
+        
+        for location_name in profile['planned_locations']:
+            planned_coords = self.ner_locations[location_name]
+            distance = np.sqrt(
+                (lat - planned_coords['lat'])**2 + 
+                (lon - planned_coords['lon'])**2
+            ) * 111  # Convert to km (approximate)
+            min_distance = min(min_distance, distance)
+        
+        return min_distance
+    
+    def _get_time_since_checkin(self, timestamp: datetime) -> int:
+        """Get time since last check-in (minutes)"""
+        # Simulate random check-in patterns
+        return random.randint(30, 480)  # 30 minutes to 8 hours
+    
+    def _check_incident_occurrence(self, timestamp: datetime, lat: float, lon: float,
+                                 profile: Dict, is_active: bool) -> Dict:
+        """Determine if an incident occurred and its details"""
+        
+        # Base incident probability (very low)
+        incident_prob = 0.001  # 0.1% chance per 30-minute interval
+        
+        # Adjust probability based on various factors
+        hour = timestamp.hour
+        if 22 <= hour or hour <= 5:
+            incident_prob *= 3  # Higher risk at night
+        
+        if not is_active:
+            incident_prob *= 0.1  # Lower risk when not moving
+        
+        if profile['experience_level'] == 'first_time':
+            incident_prob *= 2
+        elif profile['experience_level'] == 'expert':
+            incident_prob *= 0.5
+        
+        # Weather impact (simplified)
+        weather = random.choice(['clear', 'rain', 'storm'])
+        if weather == 'storm':
+            incident_prob *= 5
+        elif weather == 'rain':
+            incident_prob *= 2
+        
+        # Check if incident occurs
+        has_incident = random.random() < incident_prob
+        
+        incident_data = {
+            'has_incident': has_incident,
+            'incident_type': None,
+            'incident_severity': None,
+            'prediction_target': 0  # 0: No incident, 1: Incident in next 2 hours
+        }
+        
+        if has_incident:
+            # Determine incident type based on context
+            incident_types = {
+                'medical_emergency': 0.3,
+                'getting_lost': 0.25,
+                'weather_related': 0.2,
+                'wildlife_encounter': 0.1,
+                'accident': 0.1,
+                'security_issue': 0.05
+            }
+            
+            incident_type = np.random.choice(
+                list(incident_types.keys()),
+                p=list(incident_types.values())
+            )
+            
+            incident_data.update({
+                'incident_type': incident_type,
+                'incident_severity': np.random.choice(['low', 'medium', 'high'], p=[0.6, 0.3, 0.1]),
+                'prediction_target': 1
+            })
+        
+        # Create prediction target for next 2 hours
+        # This would be used to train the model to predict incidents in advance
+        future_incident_prob = incident_prob * 0.5  # 50% of current probability
+        incident_data['future_incident_risk'] = min(1.0, future_incident_prob * 100)
+        
+        return incident_data
+
+
+class AnomalyDetectionDataGenerator(MockDataGenerator):
+    """Generate dataset for anomaly detection model training"""
+    
+    def generate_behavioral_dataset(self, n_tourists: int = 500, 
+                                   days_per_tourist: int = 7) -> pd.DataFrame:
+        """Generate behavioral data with normal and anomalous patterns"""
+        behavioral_data = []
+        
+        for tourist_id in range(n_tourists):
+            profile = self._generate_tourist_profile_anomaly(tourist_id)
+            
+            # Generate mostly normal behavior with some anomalies
+            for day in range(days_per_tourist):
+                daily_data = self._generate_daily_behavior(profile, day)
+                behavioral_data.extend(daily_data)
+        
+        return pd.DataFrame(behavioral_data)
+    
+    def _generate_tourist_profile_anomaly(self, tourist_id: int) -> Dict:
+        """Generate tourist profile for anomaly detection"""
+        return {
+            'tourist_id': f"tourist_{tourist_id}",
+            'normal_activity_pattern': random.choice(['early_bird', 'regular', 'night_owl']),
+            'typical_speed': random.uniform(2, 8),  # kmph
+            'communication_frequency': random.choice(['high', 'medium', 'low']),
+            'risk_taking_behavior': random.choice(['cautious', 'moderate', 'adventurous']),
+            'planned_duration': random.randint(3, 14)  # days
+        }
+    
+    def _generate_daily_behavior(self, profile: Dict, day: int) -> List[Dict]:
+        """Generate hourly behavioral data with potential anomalies"""
+        behaviors = []
+        
+        # Introduce anomalies with low probability
+        day_has_anomaly = random.random() < 0.05  # 5% chance per day
+        anomaly_type = None
+        anomaly_start_hour = None
+        
+        if day_has_anomaly:
+            anomaly_type = random.choice([
+                'inactivity', 'erratic_movement', 'communication_blackout',
+                'deviation_from_plan', 'panic_behavior'
+            ])
+            anomaly_start_hour = random.randint(8, 20)
+        
+        base_date = datetime.now() - timedelta(days=30-day)
+        current_location = random.choice(list(self.ner_locations.keys()))
+        base_coords = self.ner_locations[current_location]
+        
+        for hour in range(24):
+            timestamp = base_date.replace(hour=hour)
+            
+            # Determine if this hour has anomalous behavior
+            is_anomaly_hour = (day_has_anomaly and 
+                             anomaly_start_hour <= hour <= anomaly_start_hour + 3)
+            
+            behavior_data = self._generate_hourly_behavior(
+                profile, hour, current_location, is_anomaly_hour, anomaly_type
+            )
+            
+            behavior_record = {
+                'tourist_id': profile['tourist_id'],
+                'timestamp': timestamp,
+                'day': day,
+                'hour': hour,
+                'location_name': current_location,
+                'is_anomaly': is_anomaly_hour,
+                'anomaly_type': anomaly_type if is_anomaly_hour else 'normal',
+                **behavior_data
+            }
+            
+            behaviors.append(behavior_record)
+        
+        return behaviors
+    
+    def _generate_hourly_behavior(self, profile: Dict, hour: int, location: str,
+                                is_anomaly: bool, anomaly_type: str) -> Dict:
+        """Generate behavioral metrics for one hour"""
+        
+        if is_anomaly:
+            return self._generate_anomalous_behavior(profile, hour, anomaly_type)
+        else:
+            return self._generate_normal_behavior(profile, hour, location)
+    
+    def _generate_normal_behavior(self, profile: Dict, hour: int, location: str) -> Dict:
+        """Generate normal behavioral patterns"""
+        
+        # Activity level based on time and profile
+        if profile['normal_activity_pattern'] == 'early_bird':
+            activity_peak_hours = [6, 7, 8, 9, 10, 11]
+        elif profile['normal_activity_pattern'] == 'night_owl':
+            activity_peak_hours = [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+        else:  # regular
+            activity_peak_hours = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17]
+        
+        is_active_hour = hour in activity_peak_hours
+        
+        return {
+            'steps_count': random.randint(200, 800) if is_active_hour else random.randint(0, 100),
+            'distance_traveled_km': random.uniform(0.5, 3.0) if is_active_hour else random.uniform(0, 0.2),
+            'avg_speed_kmh': profile['typical_speed'] + np.random.normal(0, 1),
+            'location_changes': random.randint(1, 5) if is_active_hour else 0,
+            'app_interactions': random.randint(5, 20) if is_active_hour else random.randint(0, 3),
+            'communication_events': self._get_communication_events(profile['communication_frequency']),
+            'heart_rate_avg': random.randint(70, 90),
+            'heart_rate_variability': random.uniform(20, 40),
+            'battery_drain_rate': random.uniform(3, 6),  # % per hour
+            'gps_accuracy': random.uniform(3, 10),  # meters
+            'time_stationary_minutes': random.randint(0, 30),
+            'deviation_from_route_meters': random.randint(0, 200),
+            'panic_button_presses': 0,
+            'emergency_contacts_called': 0,
+            'unusual_location_visits': 0
+        }
+    
+    def _generate_anomalous_behavior(self, profile: Dict, hour: int, anomaly_type: str) -> Dict:
+        """Generate anomalous behavioral patterns"""
+        
+        base_behavior = self._generate_normal_behavior(profile, hour, 'unknown')
+        
+        # Modify behavior based on anomaly type
+        if anomaly_type == 'inactivity':
+            base_behavior.update({
+                'steps_count': random.randint(0, 50),
+                'distance_traveled_km': random.uniform(0, 0.1),
+                'avg_speed_kmh': random.uniform(0, 1),
+                'location_changes': 0,
+                'app_interactions': random.randint(0, 2),
+                'time_stationary_minutes': random.randint(45, 60)
+            })
+        
+        elif anomaly_type == 'erratic_movement':
+            base_behavior.update({
+                'steps_count': random.randint(1000, 2000),
+                'distance_traveled_km': random.uniform(5, 15),
+                'avg_speed_kmh': random.uniform(15, 30),
+                'location_changes': random.randint(8, 15),
+                'deviation_from_route_meters': random.randint(1000, 5000),
+                'heart_rate_avg': random.randint(100, 140),
+                'heart_rate_variability': random.uniform(50, 80)
+            })
+        
+        elif anomaly_type == 'communication_blackout':
+            base_behavior.update({
+                'app_interactions': 0,
+                'communication_events': 0,
+                'emergency_contacts_called': 0
+            })
+        
+        elif anomaly_type == 'deviation_from_plan':
+            base_behavior.update({
+                'deviation_from_route_meters': random.randint(2000, 10000),
+                'unusual_location_visits': random.randint(1, 3),
+                'gps_accuracy': random.uniform(15, 50)
+            })
+        
+        elif anomaly_type == 'panic_behavior':
+            base_behavior.update({
+                'panic_button_presses': random.randint(1, 5),
+                'emergency_contacts_called': random.randint(0, 3),
+                'heart_rate_avg': random.randint(120, 160),
+                'heart_rate_variability': random.uniform(60, 100),
+                'app_interactions': random.randint(10, 30)
+            })
+        
+        return base_behavior
+    
+    def _get_communication_events(self, frequency: str) -> int:
+        """Get number of communication events based on frequency pattern"""
+        if frequency == 'high':
+            return random.randint(3, 8)
+        elif frequency == 'medium':
+            return random.randint(1, 4)
+        else:  # low
+            return random.randint(0, 2)
+
+
+class EmergencyClassificationDataGenerator(MockDataGenerator):
+    """Generate dataset for emergency alert classification"""
+    
+    def generate_emergency_dataset(self, n_records: int = 5000) -> pd.DataFrame:
+        """Generate emergency classification training dataset"""
+        emergency_data = []
+        
+        # Emergency types with their characteristics
+        emergency_types = {
+            'medical_emergency': {
+                'keywords': ['chest pain', 'difficulty breathing', 'unconscious', 'fever', 'injury', 
+                           'bleeding', 'allergic reaction', 'heart attack', 'stroke', 'accident'],
+                'urgency_distribution': [0.1, 0.2, 0.7],  # low, medium, high
+                'typical_locations': ['Kaziranga', 'Tawang', 'remote areas'],
+                'time_patterns': 'any_time'
+            },
+            'security_threat': {
+                'keywords': ['robbery', 'theft', 'harassment', 'threat', 'unsafe', 'suspicious', 
+                           'stalking', 'violence', 'danger', 'help'],
+                'urgency_distribution': [0.2, 0.3, 0.5],
+                'typical_locations': ['isolated areas', 'night locations'],
+                'time_patterns': 'night_higher'
+            },
+            'getting_lost': {
+                'keywords': ['lost', 'can\'t find', 'wrong direction', 'confused', 'no signal',
+                           'don\'t know location', 'need directions', 'stranded', 'path'],
+                'urgency_distribution': [0.4, 0.4, 0.2],
+                'typical_locations': ['forest areas', 'remote locations'],
+                'time_patterns': 'day_higher'
+            },
+            'weather_emergency': {
+                'keywords': ['flood', 'landslide', 'storm', 'heavy rain', 'stuck', 'road blocked',
+                           'lightning', 'hail', 'wind', 'cyclone', 'weather'],
+                'urgency_distribution': [0.1, 0.3, 0.6],
+                'typical_locations': ['mountain areas', 'monsoon regions'],
+                'time_patterns': 'seasonal'
+            },
+            'wildlife_encounter': {
+                'keywords': ['elephant', 'tiger', 'bear', 'snake', 'wild animal', 'attacked',
+                           'animal threat', 'wildlife', 'charging', 'aggressive animal'],
+                'urgency_distribution': [0.0, 0.2, 0.8],
+                'typical_locations': ['Kaziranga', 'forest areas', 'wildlife sanctuaries'],
+                'time_patterns': 'dawn_dusk'
+            },
+            'natural_disaster': {
+                'keywords': ['earthquake', 'landslide', 'flood', 'fire', 'disaster', 'evacuation',
+                           'emergency shelter', 'rescue needed', 'trapped', 'collapsed'],
+                'urgency_distribution': [0.0, 0.1, 0.9],
+                'typical_locations': ['mountain areas', 'river areas'],
+                'time_patterns': 'any_time'
+            },
+            'false_alarm': {
+                'keywords': ['mistake', 'false alarm', 'cancel', 'sorry', 'by accident', 'testing',
+                           'not emergency', 'all good', 'resolved', 'misunderstood'],
+                'urgency_distribution': [0.9, 0.1, 0.0],
+                'typical_locations': ['any'],
+                'time_patterns': 'any_time'
+            }
+        }
+        
+        for _ in range(n_records):
+            # Select emergency type
+            emergency_type = np.random.choice(
+                list(emergency_types.keys()),
+                p=[0.25, 0.15, 0.20, 0.15, 0.10, 0.05, 0.10]  # Weighted distribution
+            )
+            
+            emergency_info = emergency_types[emergency_type]
+            
+            # Generate emergency record
+            record = self._generate_emergency_record(emergency_type, emergency_info)
+            emergency_data.append(record)
+        
+        return pd.DataFrame(emergency_data)
+    
+    def _generate_emergency_record(self, emergency_type: str, emergency_info: Dict) -> Dict:
+        """Generate a single emergency record"""
+        
+        # Generate timestamp based on time patterns
+        timestamp = self._generate_emergency_timestamp(emergency_info['time_patterns'])
+        
+        # Select location
+        location_name = self._select_emergency_location(emergency_info['typical_locations'])
+        location_info = self.ner_locations[location_name]
+        
+        # Generate emergency text (if any)
+        emergency_text = self._generate_emergency_text(emergency_type, emergency_info['keywords'])
+        
+        # Determine urgency level
+        urgency_level = np.random.choice(
+            ['low', 'medium', 'high'], 
+            p=emergency_info['urgency_distribution']
+        )
+        
+        # Generate contextual features
+        context_features = self._generate_emergency_context(timestamp, location_name, emergency_type)
+        
+        record = {
+            'emergency_id': str(uuid.uuid4()),
+            'timestamp': timestamp,
+            'emergency_type': emergency_type,  # Target variable
+            'urgency_level': urgency_level,    # Target variable
+            'location_name': location_name,
+            'latitude': location_info['lat'] + np.random.normal(0, 0.01),
+            'longitude': location_info['lon'] + np.random.normal(0, 0.01),
+            'state': location_info['state'],
+            'emergency_text': emergency_text,
+            'text_length': len(emergency_text) if emergency_text else 0,
+            'has_text': bool(emergency_text),
+            'hour': timestamp.hour,
+            'day_of_week': timestamp.weekday(),
+            'is_weekend': timestamp.weekday() >= 5,
+            'is_night': timestamp.hour < 6 or timestamp.hour > 22,
+            'month': timestamp.month,
+            'is_monsoon_season': timestamp.month in [6, 7, 8, 9],
+            **context_features
+        }
+        
+        return record
+    
+    def _generate_emergency_timestamp(self, time_pattern: str) -> datetime:
+        """Generate timestamp based on emergency time patterns"""
+        base_time = datetime.now() - timedelta(days=random.randint(0, 180))
+        
+        if time_pattern == 'night_higher':
+            # 60% chance of night time (22:00 - 06:00)
+            if random.random() < 0.6:
+                hour = random.choice(list(range(22, 24)) + list(range(0, 6)))
+            else:
+                hour = random.randint(6, 21)
+        elif time_pattern == 'day_higher':
+            # 80% chance of day time (06:00 - 18:00)
+            if random.random() < 0.8:
+                hour = random.randint(6, 18)
+            else:
+                hour = random.choice(list(range(19, 24)) + list(range(0, 5)))
+        elif time_pattern == 'dawn_dusk':
+            # Higher probability during dawn/dusk
+            if random.random() < 0.4:
+                hour = random.choice([5, 6, 7, 18, 19, 20])
+            else:
+                hour = random.randint(0, 23)
+        elif time_pattern == 'seasonal':
+            # Adjust month for monsoon season
+            if random.random() < 0.7:
+                month = random.choice([6, 7, 8, 9])  # Monsoon
+                base_time = base_time.replace(month=month)
+            hour = random.randint(0, 23)
+        else:  # any_time
+            hour = random.randint(0, 23)
+        
+        return base_time.replace(hour=hour, minute=random.randint(0, 59))
+    
+    def _select_emergency_location(self, typical_locations: List[str]) -> str:
+        """Select location based on emergency type preferences"""
+        if 'any' in typical_locations:
+            return random.choice(list(self.ner_locations.keys()))
+        
+        # Map location types to actual locations
+        location_mapping = {
+            'Kaziranga': ['Kaziranga'],
+            'Tawang': ['Tawang'],
+            'remote areas': ['Tawang', 'Itanagar', 'Kohima'],
+            'forest areas': ['Kaziranga', 'Tawang', 'Itanagar'],
+            'mountain areas': ['Gangtok', 'Tawang', 'Kohima', 'Itanagar'],
+            'wildlife sanctuaries': ['Kaziranga'],
+            'isolated areas': ['Tawang', 'Itanagar', 'Kohima'],
+            'night locations': list(self.ner_locations.keys()),
+            'monsoon regions': ['Shillong', 'Guwahati', 'Agartala'],
+            'river areas': ['Guwahati', 'Agartala']
+        }
+        
+        possible_locations = []
+        for loc_type in typical_locations:
+            if loc_type in location_mapping:
+                possible_locations.extend(location_mapping[loc_type])
+        
+        return random.choice(possible_locations) if possible_locations else random.choice(list(self.ner_locations.keys()))
+    
+    def _generate_emergency_text(self, emergency_type: str, keywords: List[str]) -> str:
+        """Generate emergency text message"""
+        
+        # 30% chance of no text (voice call or panic button only)
+        if random.random() < 0.3:
+            return ""
+        
+        # Generate text with varying complexity
+        text_templates = {
+            'simple': [
+                "{keyword}",
+                "Need help, {keyword}",
+                "Emergency: {keyword}",
+                "Please help, {keyword}"
+            ],
+            'detailed': [
+                "I am experiencing {keyword} at {location}. Please send help immediately.",
+                "Emergency situation: {keyword}. I am at {location} and need assistance.",
+                "Need urgent help! {keyword} has occurred. My location is {location}.",
+                "SOS! {keyword} - please contact local authorities. I'm near {location}."
+            ],
+            'conversational': [
+                "Hi, I'm having trouble with {keyword}. Can someone help me? I'm somewhere near {location}.",
+                "Hello, this is an emergency. I'm dealing with {keyword} and I'm not sure what to do. I think I'm at {location}.",
+                "Please help me! There's a situation with {keyword}. I'm trying to stay calm but I need assistance at {location}."
+            ]
+        }
+        
+        template_type = np.random.choice(['simple', 'detailed', 'conversational'], p=[0.4, 0.4, 0.2])
+        template = random.choice(text_templates[template_type])
+        
+        # Select keyword and location
+        keyword = random.choice(keywords)
+        location_hint = random.choice(['the market', 'hotel area', 'main road', 'tourist spot', 'remote area'])
+        
+        # Add some natural language variations
+        if random.random() < 0.3:
+            keyword = f"some {keyword}"
+        if random.random() < 0.2:
+            keyword = keyword.upper()
+        
+        text = template.format(keyword=keyword, location=location_hint)
+        
+        # Add typos and variations for realism
+        if random.random() < 0.1:
+            text = self._add_typos(text)
+        
+        return text
+    
+    def _add_typos(self, text: str) -> str:
+        """Add realistic typos to text"""
+        typo_variations = {
+            'help': ['hlp', 'hepl', 'help'],
+            'emergency': ['emergeny', 'emrgency', 'emergency'],
+            'please': ['plz', 'pls', 'please'],
+            'location': ['locaton', 'location']
+        }
+        
+        words = text.split()
+        for i, word in enumerate(words):
+            word_lower = word.lower().strip('.,!?')
+            if word_lower in typo_variations and random.random() < 0.3:
+                words[i] = word.replace(word_lower, random.choice(typo_variations[word_lower]))
+        
+        return ' '.join(words)
+    
+    def _generate_emergency_context(self, timestamp: datetime, location: str, emergency_type: str) -> Dict:
+        """Generate contextual features for emergency"""
+        
+        return {
+            'distance_from_hospital': self._get_distance_to_hospital(location),
+            'distance_from_police': self._get_distance_to_police(location),
+            'weather_condition': self._get_contextual_weather(emergency_type, timestamp),
+            'tourist_density': self._get_tourist_density(location, timestamp),
+            'previous_alerts_today': random.randint(0, 3),
+            'response_team_availability': np.random.choice(['high', 'medium', 'low'], p=[0.5, 0.3, 0.2]),
+            'network_signal_strength': random.randint(1, 5),
+            'battery_level': random.randint(10, 100),
+            'user_profile_risk_score': random.randint(20, 80),
+            'group_size': random.randint(1, 8),
+            'local_event_ongoing': 1 if random.random() < 0.1 else 0
+        }
+    
+    def _get_contextual_weather(self, emergency_type: str, timestamp: datetime) -> str:
+        """Get weather condition relevant to emergency type"""
+        if emergency_type == 'weather_emergency':
+            return np.random.choice(['heavy_rain', 'storm', 'flood'], p=[0.4, 0.4, 0.2])
+        elif timestamp.month in [6, 7, 8, 9]:  # Monsoon
+            return np.random.choice(['light_rain', 'heavy_rain', 'cloudy'], p=[0.4, 0.3, 0.3])
+        else:
+            return np.random.choice(['clear', 'cloudy', 'light_rain'], p=[0.6, 0.3, 0.1])
+
+
+class NLPDatasetGenerator(MockDataGenerator):
+    """Generate dataset for NLP tasks (chatbot, sentiment analysis)"""
+    
+    def generate_chatbot_dataset(self, n_conversations: int = 1000) -> pd.DataFrame:
+        """Generate conversational dataset for chatbot training"""
+        
+        conversation_data = []
+        
+        # Define conversation categories
+        conversation_categories = {
+            'safety_inquiry': {
+                'intents': ['safety_score', 'risk_areas', 'emergency_contacts', 'safety_tips'],
+                'languages': ['english', 'hindi', 'local']
+            },
+            'location_help': {
+                'intents': ['directions', 'nearby_facilities', 'transportation', 'accommodation'],
+                'languages': ['english', 'hindi', 'local']
+            },
+            'emergency_guidance': {
+                'intents': ['emergency_procedures', 'medical_help', 'police_contact', 'evacuation'],
+                'languages': ['english', 'hindi', 'local']
+            },
+            'cultural_information': {
+                'intents': ['local_customs', 'festivals', 'etiquette', 'language_help'],
+                'languages': ['english', 'hindi', 'local']
+            },
+            'technical_support': {
+                'intents': ['app_help', 'connectivity_issues', 'feature_explanation'],
+                'languages': ['english', 'hindi']
+            }
+        }
+        
+        for _ in range(n_conversations):
+            category = random.choice(list(conversation_categories.keys()))
+            category_info = conversation_categories[category]
+            
+            conversation = self._generate_single_conversation(category, category_info)
+            conversation_data.extend(conversation)
+        
+        return pd.DataFrame(conversation_data)
+    
+    def _generate_single_conversation(self, category: str, category_info: Dict) -> List[Dict]:
+        """Generate a single conversation thread"""
+        
+        conversation_id = str(uuid.uuid4())
+        intent = random.choice(category_info['intents'])
+        language = random.choice(category_info['languages'])
+        
+        # Generate conversation turns (1-5 turns)
+        num_turns = random.randint(1, 5)
+        conversation_turns = []
+        
+        for turn in range(num_turns):
+            # User message
+            user_message = self._generate_user_message(intent, language, turn)
+            user_turn = {
+                'conversation_id': conversation_id,
+                'turn_number': turn * 2,
+                'speaker': 'user',
+                'message': user_message,
+                'intent': intent,
+                'category': category,
+                'language': language,
+                'sentiment': self._analyze_message_sentiment(user_message),
+                'urgency_level': self._determine_message_urgency(user_message, category),
+                'timestamp': datetime.now() - timedelta(minutes=random.randint(0, 1440))
+            }
+            conversation_turns.append(user_turn)
+            
+            # Bot response
+            bot_message = self._generate_bot_response(intent, language, user_message)
+            bot_turn = {
+                'conversation_id': conversation_id,
+                'turn_number': turn * 2 + 1,
+                'speaker': 'bot',
+                'message': bot_message,
+                'intent': intent,
+                'category': category,
+                'language': language,
+                'sentiment': 'helpful',
+                'urgency_level': user_turn['urgency_level'],
+                'timestamp': user_turn['timestamp'] + timedelta(seconds=random.randint(1, 30))
+            }
+            conversation_turns.append(bot_turn)
+        
+        return conversation_turns
+    
+    def _generate_user_message(self, intent: str, language: str, turn: int) -> str:
+        """Generate user messages based on intent and language"""
+        
+        message_templates = {
+            'safety_score': {
+                'english': [
+                    "What's my current safety score?",
+                    "How safe is my current location?",
+                    "Can you tell me about the safety level here?",
+                    "Is this area safe for tourists?",
+                    "What's the risk level in this region?"
+                ],
+                'hindi': [
+                    "Mera safety score kya hai?",
+                    "Yaha kitna safe hai?",
+                    "Is jagah ka safety level kya hai?",
+                    "Ye area tourists ke liye safe hai?",
+                    "Is region mein kya risk hai?"
+                ],
+                'local': [
+                    "This place safe or not?",
+                    "What safety here?",
+                    "How much safe this area?",
+                    "Tourist safe here?",
+                    "Any danger here?"
+                ]
+            },
+            'directions': {
+                'english': [
+                    "How do I get to the main market?",
+                    "Can you help me find the nearest hospital?",
+                    "What's the best route to the tourist center?",
+                    "I'm lost, can you guide me?",
+                    "Where is the police station from here?"
+                ],
+                'hindi': [
+                    "Main market kaise jau?",
+                    "Sabse paas hospital kaha hai?",
+                    "Tourist center ka raasta kya hai?",
+                    "Main raste mein bhul gaya hu, help karo",
+                    "Police station kaha hai yaha se?"
+                ],
+                'local': [
+                    "Where market is?",
+                    "Hospital direction please",
+                    "Tourist place how to go?",
+                    "I am lost, help me",
+                    "Police station where?"
+                ]
+            },
+            'emergency_procedures': {
+                'english': [
+                    "What should I do in an emergency?",
+                    "How do I contact help quickly?",
+                    "Emergency procedure kya hai?",
+                    "I need immediate help!",
+                    "Someone is injured, what to do?"
+                ],
+                'hindi': [
+                    "Emergency mein kya karna chahiye?",
+                    "Jaldi help kaise contact karu?",
+                    "Turant help chahiye!",
+                    "Koi injured hai, kya karu?",
+                    "Emergency procedure kya hai?"
+                ],
+                'local': [
+                    "Emergency time what to do?",
+                    "Help how to call?",
+                    "Urgent help needed!",
+                    "Person injured, what do?",
+                    "Emergency procedure tell"
+                ]
+            }
+        }
+        
+        # Get appropriate template
+        if intent in message_templates and language in message_templates[intent]:
+            templates = message_templates[intent][language]
+            base_message = random.choice(templates)
+        else:
+            # Fallback to generic message
+            base_message = "Can you help me with this?"
+        
+        # Add variations for follow-up turns
+        if turn > 0:
+            follow_up_phrases = {
+                'english': ["Can you explain more?", "I didn't understand", "What else?", "More details please"],
+                'hindi': ["Aur bataiye", "Samajh nahi aaya", "Aur kya?", "Zyada detail mein"],
+                'local': ["More explain please", "Not understand", "What else?", "More detail"]
+            }
+            if random.random() < 0.3:
+                base_message = random.choice(follow_up_phrases[language])
+        
+        return base_message
+    
+    def _generate_bot_response(self, intent: str, language: str, user_message: str) -> str:
+        """Generate appropriate bot responses"""
+        
+        response_templates = {
+            'safety_score': {
+                'english': [
+                    "Your current safety score is {score}/100. You're in a {risk_level} risk area.",
+                    "Based on your location and conditions, your safety score is {score}. Stay alert!",
+                    "The safety level here is {risk_level}. Your score: {score}/100.",
+                ],
+                'hindi': [
+                    "Aapka safety score {score}/100 hai. Ye {risk_level} risk area hai.",
+                    "Aapki location ke hisab se safety score {score} hai. Savdhan rahen!",
+                    "Yaha safety level {risk_level} hai. Aapka score: {score}/100.",
+                ],
+                'local': [
+                    "Your safety score is {score}/100. This area {risk_level} risk.",
+                    "Location safety score {score}. Please be careful!",
+                    "Safety level here {risk_level}. Your score: {score}/100.",
+                ]
+            },
+            'directions': {
+                'english': [
+                    "To reach your destination, head {direction} for {distance}. Follow the main road.",
+                    "The nearest {facility} is {distance} away in {direction} direction.",
+                    "I can guide you step by step. First, go {direction} from your current location.",
+                ],
+                'hindi': [
+                    "Apni jagah pahunchne ke liye {direction} {distance} jaye. Main road follow kare.",
+                    "Sabse paas {facility} {distance} door {direction} direction mein hai.",
+                    "Main step by step guide kar sakta hu. Pehle {direction} jaye.",
+                ],
+                'local': [
+                    "Go {direction} direction {distance} for reach place.",
+                    "Nearest {facility} is {distance} distance {direction} side.",
+                    "Step by step I will guide. First go {direction}.",
+                ]
+            }
+        }
+        
+        # Generate response with placeholders filled
+        if intent in response_templates and language in response_templates[intent]:
+            templates = response_templates[intent][language]
+            base_response = random.choice(templates)
+            
+            # Fill placeholders
+            base_response = base_response.format(
+                score=random.randint(60, 95),
+                risk_level=random.choice(['low', 'medium', 'high']),
+                direction=random.choice(['north', 'south', 'east', 'west']),
+                distance=f"{random.randint(100, 2000)}m",
+                facility=random.choice(['hospital', 'police station', 'market', 'hotel'])
+            )
+        else:
+            # Generic helpful response
+            base_response = "I'm here to help you. Let me assist you with that."
+        
+        return base_response
+    
+    def _analyze_message_sentiment(self, message: str) -> str:
+        """Analyze sentiment of message"""
+        # Simplified sentiment analysis based on keywords
+        positive_keywords = ['good', 'great', 'excellent', 'thank', 'helpful', 'safe']
+        negative_keywords = ['bad', 'terrible', 'help', 'emergency', 'danger', 'lost', 'scared']
+        urgent_keywords = ['urgent', 'immediately', 'quickly', 'emergency', 'SOS', 'help']
+        
+        message_lower = message.lower()
+        
+        if any(keyword in message_lower for keyword in urgent_keywords):
+            return 'urgent'
+        elif any(keyword in message_lower for keyword in negative_keywords):
+            return 'negative'
+        elif any(keyword in message_lower for keyword in positive_keywords):
+            return 'positive'
+        else:
+            return 'neutral'
+    
+    def _determine_message_urgency(self, message: str, category: str) -> str:
+        """Determine urgency level of message"""
+        # Simple rule-based urgency determination using keywords and category
+        msg = (message or '').lower()
+        urgent_keywords = ['urgent', 'immediately', 'quickly', 'emergency', 'sos', 'help', 'accident', 'trapped']
+        high_risk_terms = ['chest pain', 'difficulty breathing', 'unconscious', 'bleeding', 'heart attack', 'stroke']
+
+        # If explicit urgent keywords or high-risk medical terms are present -> high
+        if any(term in msg for term in high_risk_terms) or any(k in msg for k in urgent_keywords):
+            return 'high'
+
+        # Category influenced rules
+        if category == 'emergency_guidance':
+            # Many emergency guidance queries should be medium-high
+            if any(word in msg for word in ['need', "i'm injured", "i am injured", 'help']):
+                return 'high'
+            return 'medium'
+
+        if category == 'safety_inquiry':
+            # Safety inquiries are usually low urgency unless they mention danger
+            if any(word in msg for word in ['danger', 'scared', 'threat', 'unsafe', 'lost']):
+                return 'medium'
+            return 'low'
+
+        if category == 'location_help':
+            if 'lost' in msg or 'stranded' in msg:
+                return 'medium'
+            return 'low'
+
+        # Default fallback
+        return 'low'
+
+
+if __name__ == '__main__':
+    # Quick demo to generate small sample datasets for each generator
+    print('Running demo: generating sample datasets...')
+
+    safety_gen = SafetyScoringDataGenerator(seed=123)
+    df_safety = safety_gen.generate_dataset(200)
+    print('Safety dataset rows:', len(df_safety))
+    print(df_safety[['location_name', 'weather_condition', 'risk_zone', 'safety_score']].head(3).to_dict(orient='records'))
+    # Save datasets to CSV for model training
+    df_safety.to_csv('safety_dataset.csv', index=False)
+
+    incident_gen = IncidentPredictionDataGenerator(seed=123)
+    df_movement = incident_gen.generate_movement_dataset(n_tourists=10, days_per_tourist=2)
+    print('Movement dataset rows:', len(df_movement))
+    print(df_movement.head(3).to_dict(orient='records'))
+    df_movement.to_csv('movement_dataset.csv', index=False)
+
+    anomaly_gen = AnomalyDetectionDataGenerator(seed=123)
+    df_behav = anomaly_gen.generate_behavioral_dataset(n_tourists=10, days_per_tourist=2)
+    print('Behavioral dataset rows:', len(df_behav))
+    print(df_behav.head(3).to_dict(orient='records'))
+    df_behav.to_csv('behavioral_dataset.csv', index=False)
+
+    emergency_gen = EmergencyClassificationDataGenerator(seed=123)
+    df_em = emergency_gen.generate_emergency_dataset(n_records=20)
+    print('Emergency dataset rows:', len(df_em))
+    print(df_em[['emergency_type', 'urgency_level', 'location_name', 'emergency_text']].head(3).to_dict(orient='records'))
+    df_em.to_csv('emergency_dataset.csv', index=False)
+
+    nlp_gen = NLPDatasetGenerator(seed=123)
+    df_conv = nlp_gen.generate_chatbot_dataset(n_conversations=10)
+    print('Chatbot dataset rows:', len(df_conv))
+    print(df_conv.head(6).to_dict(orient='records'))
+
+    print('Demo generation complete.')

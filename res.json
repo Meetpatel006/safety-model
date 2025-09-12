@@ -1,0 +1,20 @@
+{
+  "incident_probabilities": { "medical": 0.12, "getting_lost": 0.45, "weather": 0.03, "wildlife": 0.02, "social": 0.38 },
+  "top_incident": "getting_lost",
+  "top_probability": 0.45,
+  "risk_score": 73,                       
+  "alert": true,                          
+  "lead_time_minutes": 18.5,              
+  "predicted_location": { "lat": 26.8467, "lon": 80.9462, "uncertainty_m": 120 },
+  "urgency_level": 7,                     
+  "recommended_actions": ["notify_user", "dispatch_responder", "send_route_hint"],
+  "recommended_responders": [{ "type": "local_guide", "eta_min": 12 }, { "type": "medical", "eta_min": 20 }],
+  "contributing_features": [{ "feature": "speed_drop", "contribution": 0.24 }, { "feature": "deviation_from_route", "contribution": 0.18 }],
+  "explainability": { "method": "shap", "values": { "speed": -0.12, "route_deviation": 0.22 } },
+  "raw_model_outputs": { "lstm_anomaly": 0.52, "rf_incident_probs": { "getting_lost": 0.41 } },
+  "ensemble_weights": { "lstm": 0.6, "rf": 0.4 },
+  "model_version": "incident-v1.3.0",
+  "inference_ms": 48,
+  "timestamp_utc": "2025-09-10T12:34:56Z",
+  "trace_id": "8f3c2a9b-..." 
+}
