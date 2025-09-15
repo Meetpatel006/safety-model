@@ -59,6 +59,46 @@
         "documentation": {}
     },
     {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "BackgroundTasks",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "BackgroundTasks",
         "importPath": "fastapi",
         "description": "fastapi",
@@ -80,6 +120,38 @@
         "description": "fastapi.middleware.cors",
         "isExtraImport": true,
         "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "CORSMiddleware",
+        "importPath": "fastapi.middleware.cors",
+        "description": "fastapi.middleware.cors",
+        "isExtraImport": true,
+        "detail": "fastapi.middleware.cors",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
+        "documentation": {}
+    },
+    {
+        "label": "JSONResponse",
+        "importPath": "fastapi.responses",
+        "description": "fastapi.responses",
+        "isExtraImport": true,
+        "detail": "fastapi.responses",
         "documentation": {}
     },
     {
@@ -108,6 +180,46 @@
     },
     {
         "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Field",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "validator",
         "importPath": "pydantic",
         "description": "pydantic",
         "isExtraImport": true,
@@ -259,7 +371,127 @@
         "documentation": {}
     },
     {
-        "label": "Optional",
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "radians",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sin",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "cos",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "sqrt",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "atan2",
+        "importPath": "math",
+        "description": "math",
+        "isExtraImport": true,
+        "detail": "math",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
         "importPath": "typing",
         "description": "typing",
         "isExtraImport": true,
@@ -307,7 +539,79 @@
         "documentation": {}
     },
     {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Union",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
         "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
         "importPath": "datetime",
         "description": "datetime",
         "isExtraImport": true,
@@ -388,6 +692,38 @@
         "documentation": {}
     },
     {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
         "label": "random",
         "kind": 6,
         "isExtraImport": true,
@@ -423,6 +759,14 @@
         "documentation": {}
     },
     {
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
         "label": "train_test_split",
         "importPath": "sklearn.model_selection",
         "description": "sklearn.model_selection",
@@ -439,31 +783,39 @@
         "documentation": {}
     },
     {
-        "label": "LabelEncoder",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
-        "label": "StandardScaler",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
-        "label": "LabelEncoder",
-        "importPath": "sklearn.preprocessing",
-        "description": "sklearn.preprocessing",
+        "label": "train_test_split",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
         "isExtraImport": true,
-        "detail": "sklearn.preprocessing",
+        "detail": "sklearn.model_selection",
         "documentation": {}
     },
     {
-        "label": "RandomForestClassifier",
+        "label": "GridSearchCV",
+        "importPath": "sklearn.model_selection",
+        "description": "sklearn.model_selection",
+        "isExtraImport": true,
+        "detail": "sklearn.model_selection",
+        "documentation": {}
+    },
+    {
+        "label": "RandomForestRegressor",
         "importPath": "sklearn.ensemble",
         "description": "sklearn.ensemble",
         "isExtraImport": true,
@@ -471,7 +823,63 @@
         "documentation": {}
     },
     {
+        "label": "RandomForestRegressor",
+        "importPath": "sklearn.ensemble",
+        "description": "sklearn.ensemble",
+        "isExtraImport": true,
+        "detail": "sklearn.ensemble",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "mean_squared_error",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "r2_score",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
         "label": "classification_report",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "confusion_matrix",
+        "importPath": "sklearn.metrics",
+        "description": "sklearn.metrics",
+        "isExtraImport": true,
+        "detail": "sklearn.metrics",
+        "documentation": {}
+    },
+    {
+        "label": "accuracy_score",
         "importPath": "sklearn.metrics",
         "description": "sklearn.metrics",
         "isExtraImport": true,
@@ -530,11 +938,59 @@
         "documentation": {}
     },
     {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "StandardScaler",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
+        "label": "LabelEncoder",
+        "importPath": "sklearn.preprocessing",
+        "description": "sklearn.preprocessing",
+        "isExtraImport": true,
+        "detail": "sklearn.preprocessing",
+        "documentation": {}
+    },
+    {
         "label": "XGBClassifier",
         "importPath": "xgboost",
         "description": "xgboost",
         "isExtraImport": true,
         "detail": "xgboost",
+        "documentation": {}
+    },
+    {
+        "label": "XGBClassifier",
+        "importPath": "xgboost",
+        "description": "xgboost",
+        "isExtraImport": true,
+        "detail": "xgboost",
+        "documentation": {}
+    },
+    {
+        "label": "SimpleImputer",
+        "importPath": "sklearn.impute",
+        "description": "sklearn.impute",
+        "isExtraImport": true,
+        "detail": "sklearn.impute",
         "documentation": {}
     },
     {
@@ -577,7 +1033,7 @@
         "kind": 6,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "class GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 encoder_path: str = \"label_encoder.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained model and geofence data\"\"\"\n        # Resolve paths relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)\n        self.encoder_path = str(base_dir / encoder_path)",
+        "peekOfCode": "class GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained REGRESSION model and geofence data\"\"\"\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)\n        self.geofences_path = str(base_dir / geofences_path)\n        self.model = None\n        self.geofences = None",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -586,7 +1042,7 @@
         "kind": 6,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "class Location(BaseModel):\n    \"\"\"Input schema for location data prediction\"\"\"\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    latitude: float = Field(..., description=\"Input latitude\")\n    longitude: float = Field(..., description=\"Input longitude\")\n    predicted_risk_label: str = Field(..., description=\"Predicted risk category\")\n    predicted_safety_score: int = Field(..., description=\"Safety score (20-100)\")",
+        "peekOfCode": "class Location(BaseModel):\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    latitude: float\n    longitude: float\n    predicted_risk_label: str\n    predicted_safety_score: float\n    safety_score_100: int\n    features: Dict",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -595,7 +1051,7 @@
         "kind": 6,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "class SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    latitude: float = Field(..., description=\"Input latitude\")\n    longitude: float = Field(..., description=\"Input longitude\")\n    predicted_risk_label: str = Field(..., description=\"Predicted risk category\")\n    predicted_safety_score: int = Field(..., description=\"Safety score (20-100)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    features: Dict = Field(..., description=\"Extracted features used for prediction\")\n    timestamp: str = Field(..., description=\"Prediction timestamp\")\n@app.on_event(\"startup\")",
+        "peekOfCode": "class SafetyPrediction(BaseModel):\n    latitude: float\n    longitude: float\n    predicted_risk_label: str\n    predicted_safety_score: float\n    safety_score_100: int\n    features: Dict\n    timestamp: str\n@app.on_event(\"startup\")\ndef startup_event():",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -604,7 +1060,7 @@
         "kind": 2,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "def startup_event():\n    \"\"\"FastAPI startup event: initialize the predictor\"\"\"\n    global predictor\n    predictor = GeoFenceSafetyPredictor()\n    if predictor.model is None:\n        logger.warning(\"Model failed to load during startup. Ensure required files exist in the geo fencing directory.\")\n@app.get(\"/\")\nasync def root():\n    \"\"\"Root endpoint with API information\"\"\"\n    return {",
+        "peekOfCode": "def startup_event():\n    global predictor\n    predictor = GeoFenceSafetyPredictor()\n    if predictor.model is None:\n        logger.warning(\"Model failed to load during startup. Ensure 'geofence_safety_model.pkl' and 'geofences.json' exist.\")\n@app.get(\"/\")\nasync def root():\n    return {\n        \"message\": \"GeoFence Safety Prediction API\",\n        \"version\": \"2.0.0\",",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -613,7 +1069,7 @@
         "kind": 5,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "logger = logging.getLogger(__name__)\nclass GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 encoder_path: str = \"label_encoder.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained model and geofence data\"\"\"\n        # Resolve paths relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained REGRESSION model and geofence data\"\"\"\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)\n        self.geofences_path = str(base_dir / geofences_path)\n        self.model = None",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -622,7 +1078,7 @@
         "kind": 5,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "app = FastAPI(\n    title=\"GeoFence Safety Prediction API\",\n    description=\"API for predicting geofence safety scores based on location data\",\n    version=\"1.0.0\",\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\n# Add CORS middleware\napp.add_middleware(\n    CORSMiddleware,",
+        "peekOfCode": "app = FastAPI(\n    title=\"GeoFence Safety Prediction API\",\n    description=\"API for predicting geofence safety scores based on location data using a regression model.\",\n    version=\"2.0.0\", # Version bumped to reflect regression model\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -631,7 +1087,7 @@
         "kind": 5,
         "importPath": "geo fencing.api",
         "description": "geo fencing.api",
-        "peekOfCode": "predictor = None\nclass Location(BaseModel):\n    \"\"\"Input schema for location data prediction\"\"\"\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    latitude: float = Field(..., description=\"Input latitude\")\n    longitude: float = Field(..., description=\"Input longitude\")\n    predicted_risk_label: str = Field(..., description=\"Predicted risk category\")",
+        "peekOfCode": "predictor = None\nclass Location(BaseModel):\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    latitude: float\n    longitude: float\n    predicted_risk_label: str\n    predicted_safety_score: float\n    safety_score_100: int",
         "detail": "geo fencing.api",
         "documentation": {}
     },
@@ -640,25 +1096,16 @@
         "kind": 2,
         "importPath": "geo fencing.dataset",
         "description": "geo fencing.dataset",
-        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371  # Earth radius in km\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\ndef is_inside_circle(user_lat, user_lon, center_lat, center_lon, radius_km):\n    return haversine_distance(user_lat, user_lon, center_lat, center_lon) <= radius_km\ndef assign_risk(user_lat, user_lon, geofences):",
+        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1); dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\n# ---------- CONTINUOUS SCORING LOGIC (with rounding added) ----------\ndef assign_risk_continuous(user_lat, user_lon, geofences):\n    potential_scores = []\n    for fence in geofences:",
         "detail": "geo fencing.dataset",
         "documentation": {}
     },
     {
-        "label": "is_inside_circle",
+        "label": "assign_risk_continuous",
         "kind": 2,
         "importPath": "geo fencing.dataset",
         "description": "geo fencing.dataset",
-        "peekOfCode": "def is_inside_circle(user_lat, user_lon, center_lat, center_lon, radius_km):\n    return haversine_distance(user_lat, user_lon, center_lat, center_lon) <= radius_km\ndef assign_risk(user_lat, user_lon, geofences):\n    scores, labels = [], []\n    for fence in geofences:\n        ftype = fence.get(\"type\")\n        risk = fence.get(\"riskLevel\")\n        score = RISK_SCORE_MAP.get(risk, 100)\n        if ftype == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]",
-        "detail": "geo fencing.dataset",
-        "documentation": {}
-    },
-    {
-        "label": "assign_risk",
-        "kind": 2,
-        "importPath": "geo fencing.dataset",
-        "description": "geo fencing.dataset",
-        "peekOfCode": "def assign_risk(user_lat, user_lon, geofences):\n    scores, labels = [], []\n    for fence in geofences:\n        ftype = fence.get(\"type\")\n        risk = fence.get(\"riskLevel\")\n        score = RISK_SCORE_MAP.get(risk, 100)\n        if ftype == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            if is_inside_circle(user_lat, user_lon, center_lat, center_lon, radius):",
+        "peekOfCode": "def assign_risk_continuous(user_lat, user_lon, geofences):\n    potential_scores = []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            risk_label = fence.get(\"riskLevel\")\n            min_score, max_score = RISK_RANGES.get(risk_label, (91, 100))\n            dist = haversine_distance(user_lat, user_lon, center_lat, center_lon)\n            if dist <= radius:",
         "detail": "geo fencing.dataset",
         "documentation": {}
     },
@@ -667,16 +1114,25 @@
         "kind": 2,
         "importPath": "geo fencing.dataset",
         "description": "geo fencing.dataset",
-        "peekOfCode": "def generate_dataset(geofences, n_samples_per_fence=1000):\n    data = []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            # Sample uniformly within a square bounding box around the circle\n            for _ in range(n_samples_per_fence):\n                lat = center_lat + random.uniform(-0.1, 0.1)  # tweak range based on radius\n                lon = center_lon + random.uniform(-0.1, 0.1)",
+        "peekOfCode": "def generate_dataset(geofences, n_samples_per_fence=1000):\n    data = []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            for _ in range(n_samples_per_fence):\n                lat = center_lat + random.uniform(-0.1, 0.1)\n                lon = center_lon + random.uniform(-0.1, 0.1)\n                risk_label, score = assign_risk_continuous(lat, lon, geofences)\n                data.append({",
         "detail": "geo fencing.dataset",
         "documentation": {}
     },
     {
-        "label": "RISK_SCORE_MAP",
+        "label": "RISK_RANGES",
         "kind": 5,
         "importPath": "geo fencing.dataset",
         "description": "geo fencing.dataset",
-        "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90\n}\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371  # Earth radius in km\n    dlat = radians(lat2 - lat1)",
+        "peekOfCode": "RISK_RANGES = {\n    \"Very High\": (0, 20), \"High\": (21, 40), \"Medium\": (41, 70),\n    \"Standard\": (71, 90), \"Safe\": (91, 100)\n}\nSAFE_TRANSITION_KM = 1.0 \n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1); dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2",
+        "detail": "geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "SAFE_TRANSITION_KM",
+        "kind": 5,
+        "importPath": "geo fencing.dataset",
+        "description": "geo fencing.dataset",
+        "peekOfCode": "SAFE_TRANSITION_KM = 1.0 \n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1); dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\n# ---------- CONTINUOUS SCORING LOGIC (with rounding added) ----------\ndef assign_risk_continuous(user_lat, user_lon, geofences):",
         "detail": "geo fencing.dataset",
         "documentation": {}
     },
@@ -766,7 +1222,7 @@
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "df = pd.read_csv(\"geofence_features.csv\")\n# Features and target\nX = df[[\"latitude\", \"longitude\", \"min_distance_to_geofence\",\n        \"inside_any_geofence\", \"closest_geofence_risk_score\"]]\ny = df[\"risk_label\"]\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(",
+        "peekOfCode": "df = pd.read_csv(\"geofence_features.csv\")\n# --- DEFINE FEATURES AND NEW TARGET ---\n# We are training the model on the hardest, most realistic problem:\n# predicting the score from only the raw coordinates.\nX = df[[\"latitude\", \"longitude\"]]\ny = df[\"safety_score\"]  # CHANGED: Our target is now the continuous score\n# --- TRAIN/TEST SPLIT ---\n# No 'stratify' is needed for regression targets\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42",
         "detail": "geo fencing.training",
         "documentation": {}
     },
@@ -775,7 +1231,7 @@
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "X = df[[\"latitude\", \"longitude\", \"min_distance_to_geofence\",\n        \"inside_any_geofence\", \"closest_geofence_risk_score\"]]\ny = df[\"risk_label\"]\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)",
+        "peekOfCode": "X = df[[\"latitude\", \"longitude\"]]\ny = df[\"safety_score\"]  # CHANGED: Our target is now the continuous score\n# --- TRAIN/TEST SPLIT ---\n# No 'stratify' is needed for regression targets\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# --- HYPERPARAMETER TUNING FOR REGRESSION MODEL ---\n# 1. Define the base regression model\nmodel_base = RandomForestRegressor(random_state=42)",
         "detail": "geo fencing.training",
         "documentation": {}
     },
@@ -784,34 +1240,43 @@
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "y = df[\"risk_label\"]\n# Encode labels\nle = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)\n# ---------- Model ----------\nmodel = RandomForestClassifier(",
+        "peekOfCode": "y = df[\"safety_score\"]  # CHANGED: Our target is now the continuous score\n# --- TRAIN/TEST SPLIT ---\n# No 'stratify' is needed for regression targets\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# --- HYPERPARAMETER TUNING FOR REGRESSION MODEL ---\n# 1. Define the base regression model\nmodel_base = RandomForestRegressor(random_state=42)\n# 2. Define the grid of parameters to search",
         "detail": "geo fencing.training",
         "documentation": {}
     },
     {
-        "label": "le",
+        "label": "model_base",
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "le = LabelEncoder()\ny_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)\n# ---------- Model ----------\nmodel = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,",
+        "peekOfCode": "model_base = RandomForestRegressor(random_state=42)\n# 2. Define the grid of parameters to search\n# We can use a slightly smaller grid for faster tuning\nparam_grid = {\n    'n_estimators': [100, 200, 300],\n    'max_depth': [20, None],          # Let trees be deep to capture complex boundaries\n    'min_samples_split': [2, 5]       # Standard values\n}\n# 3. Set up the Grid Search object\n# For regressors, it automatically uses R-squared for scoring, which is perfect.",
         "detail": "geo fencing.training",
         "documentation": {}
     },
     {
-        "label": "y_encoded",
+        "label": "param_grid",
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "y_encoded = le.fit_transform(y)\n# ---------- Train/Test Split ----------\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y_encoded, test_size=0.2, random_state=42, stratify=y_encoded\n)\n# ---------- Model ----------\nmodel = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,\n    random_state=42,",
+        "peekOfCode": "param_grid = {\n    'n_estimators': [100, 200, 300],\n    'max_depth': [20, None],          # Let trees be deep to capture complex boundaries\n    'min_samples_split': [2, 5]       # Standard values\n}\n# 3. Set up the Grid Search object\n# For regressors, it automatically uses R-squared for scoring, which is perfect.\ngrid_search = GridSearchCV(estimator=model_base, param_grid=param_grid, \n                           cv=3, n_jobs=-1, verbose=2)\n# 4. Fit the Grid Search to the training data",
         "detail": "geo fencing.training",
         "documentation": {}
     },
     {
-        "label": "model",
+        "label": "grid_search",
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "model = RandomForestClassifier(\n    n_estimators=200,\n    max_depth=10,\n    random_state=42,\n    class_weight=\"balanced\"\n)\nmodel.fit(X_train, y_train)\n# ---------- Evaluation ----------\ny_pred = model.predict(X_test)\nprint(classification_report(y_test, y_pred, target_names=le.classes_))",
+        "peekOfCode": "grid_search = GridSearchCV(estimator=model_base, param_grid=param_grid, \n                           cv=3, n_jobs=-1, verbose=2)\n# 4. Fit the Grid Search to the training data\nprint(\"Starting hyperparameter tuning for REGRESSION model...\")\ngrid_search.fit(X_train, y_train)\n# 5. Get the best performing model from the search\nbest_model = grid_search.best_estimator_\nprint(f\"\\nBest parameters found: {grid_search.best_params_}\")\n# --- EVALUATE THE BEST MODEL ---\nprint(\"\\nEvaluating the best REGRESSION model on the test set:\")",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "best_model",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "best_model = grid_search.best_estimator_\nprint(f\"\\nBest parameters found: {grid_search.best_params_}\")\n# --- EVALUATE THE BEST MODEL ---\nprint(\"\\nEvaluating the best REGRESSION model on the test set:\")\ny_pred = best_model.predict(X_test)\n# Calculate regression metrics\nmse = mean_squared_error(y_test, y_pred)\nrmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")",
         "detail": "geo fencing.training",
         "documentation": {}
     },
@@ -820,8 +1285,557 @@
         "kind": 5,
         "importPath": "geo fencing.training",
         "description": "geo fencing.training",
-        "peekOfCode": "y_pred = model.predict(X_test)\nprint(classification_report(y_test, y_pred, target_names=le.classes_))\n# ---------- Save Model ----------\njoblib.dump(model, \"geofence_safety_model.pkl\")\njoblib.dump(le, \"label_encoder.pkl\")\nprint(\"Model and label encoder saved.\")",
+        "peekOfCode": "y_pred = best_model.predict(X_test)\n# Calculate regression metrics\nmse = mean_squared_error(y_test, y_pred)\nrmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")",
         "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\nrmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")\nprint(f\"-> R² of 1.0 is a perfect prediction. A score above 0.9 is excellent.\")\n# --- SAVE THE FINAL MODEL ---",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "rmse",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "rmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")\nprint(f\"-> R² of 1.0 is a perfect prediction. A score above 0.9 is excellent.\")\n# --- SAVE THE FINAL MODEL ---\n# The LabelEncoder is no longer needed.",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "geo fencing.training",
+        "description": "geo fencing.training",
+        "peekOfCode": "r2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")\nprint(f\"-> R² of 1.0 is a perfect prediction. A score above 0.9 is excellent.\")\n# --- SAVE THE FINAL MODEL ---\n# The LabelEncoder is no longer needed.\njoblib.dump(best_model, \"geofence_safety_model.pkl\")",
+        "detail": "geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "GeoFenceSafetyPredictor",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "class GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained REGRESSION model and geofence data\"\"\"\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)\n        self.geofences_path = str(base_dir / geofences_path)\n        self.model = None\n        self.geofences = None",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "Location",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "class Location(BaseModel):\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    latitude: float\n    longitude: float\n    predicted_risk_label: str\n    predicted_safety_score: float\n    safety_score_100: int\n    features: Dict",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "SafetyPrediction",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "class SafetyPrediction(BaseModel):\n    latitude: float\n    longitude: float\n    predicted_risk_label: str\n    predicted_safety_score: float\n    safety_score_100: int\n    features: Dict\n    timestamp: str\n@app.on_event(\"startup\")\ndef startup_event():",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "startup_event",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "def startup_event():\n    global predictor\n    predictor = GeoFenceSafetyPredictor()\n    if predictor.model is None:\n        logger.warning(\"Model failed to load during startup. Ensure 'geofence_safety_model.pkl' and 'geofences.json' exist.\")\n@app.get(\"/\")\nasync def root():\n    return {\n        \"message\": \"GeoFence Safety Prediction API\",\n        \"version\": \"2.0.0\",",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass GeoFenceSafetyPredictor:\n    \"\"\"GeoFence Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"geofence_safety_model.pkl\",\n                 geofences_path: str = \"geofences.json\"):\n        \"\"\"Initialize the predictor with the trained REGRESSION model and geofence data\"\"\"\n        base_dir = Path(__file__).resolve().parent\n        self.model_path = str(base_dir / model_path)\n        self.geofences_path = str(base_dir / geofences_path)\n        self.model = None",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "app = FastAPI(\n    title=\"GeoFence Safety Prediction API\",\n    description=\"API for predicting geofence safety scores based on location data using a regression model.\",\n    version=\"2.0.0\", # Version bumped to reflect regression model\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\napp.add_middleware(\n    CORSMiddleware,\n    allow_origins=[\"*\"],",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "predictor",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.api",
+        "description": "SIH-Models-master.safety-model.geo fencing.api",
+        "peekOfCode": "predictor = None\nclass Location(BaseModel):\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\nclass SafetyPrediction(BaseModel):\n    latitude: float\n    longitude: float\n    predicted_risk_label: str\n    predicted_safety_score: float\n    safety_score_100: int",
+        "detail": "SIH-Models-master.safety-model.geo fencing.api",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "description": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1); dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\n# ---------- CONTINUOUS SCORING LOGIC (with rounding added) ----------\ndef assign_risk_continuous(user_lat, user_lon, geofences):\n    potential_scores = []\n    for fence in geofences:",
+        "detail": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "assign_risk_continuous",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "description": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "peekOfCode": "def assign_risk_continuous(user_lat, user_lon, geofences):\n    potential_scores = []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            radius = fence[\"radiusKm\"]\n            risk_label = fence.get(\"riskLevel\")\n            min_score, max_score = RISK_RANGES.get(risk_label, (91, 100))\n            dist = haversine_distance(user_lat, user_lon, center_lat, center_lon)\n            if dist <= radius:",
+        "detail": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "generate_dataset",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "description": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "peekOfCode": "def generate_dataset(geofences, n_samples_per_fence=1000):\n    data = []\n    for fence in geofences:\n        if fence.get(\"type\") == \"circle\":\n            center_lat, center_lon = fence[\"coords\"]\n            for _ in range(n_samples_per_fence):\n                lat = center_lat + random.uniform(-0.1, 0.1)\n                lon = center_lon + random.uniform(-0.1, 0.1)\n                risk_label, score = assign_risk_continuous(lat, lon, geofences)\n                data.append({",
+        "detail": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "RISK_RANGES",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "description": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "peekOfCode": "RISK_RANGES = {\n    \"Very High\": (0, 20), \"High\": (21, 40), \"Medium\": (41, 70),\n    \"Standard\": (71, 90), \"Safe\": (91, 100)\n}\nSAFE_TRANSITION_KM = 1.0 \n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1); dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2",
+        "detail": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "SAFE_TRANSITION_KM",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "description": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "peekOfCode": "SAFE_TRANSITION_KM = 1.0 \n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1); dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\n# ---------- CONTINUOUS SCORING LOGIC (with rounding added) ----------\ndef assign_risk_continuous(user_lat, user_lon, geofences):",
+        "detail": "SIH-Models-master.safety-model.geo fencing.dataset",
+        "documentation": {}
+    },
+    {
+        "label": "haversine_distance",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.feature",
+        "description": "SIH-Models-master.safety-model.geo fencing.feature",
+        "peekOfCode": "def haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371\n    dlat = radians(lat2 - lat1)\n    dlon = radians(lon2 - lon1)\n    a = sin(dlat/2)**2 + cos(radians(lat1)) * cos(radians(lat2)) * sin(dlon/2)**2\n    c = 2 * atan2(sqrt(a), sqrt(1-a))\n    return R * c\n# ---------- Feature Engineering ----------\ndef add_features(df, geofences):\n    \"\"\"",
+        "detail": "SIH-Models-master.safety-model.geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "add_features",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.feature",
+        "description": "SIH-Models-master.safety-model.geo fencing.feature",
+        "peekOfCode": "def add_features(df, geofences):\n    \"\"\"\n    Add geospatial features for each sample.\n    Features:\n      - min_distance_to_geofence\n      - inside_any_geofence (binary)\n      - closest_geofence_risk (encoded as numeric score)\n    \"\"\"\n    min_distances = []\n    inside_flags = []",
+        "detail": "SIH-Models-master.safety-model.geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "RISK_SCORE_MAP",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.feature",
+        "description": "SIH-Models-master.safety-model.geo fencing.feature",
+        "peekOfCode": "RISK_SCORE_MAP = {\n    \"Very High\": 20,\n    \"High\": 40,\n    \"Medium\": 70,\n    \"Standard\": 90,\n    \"Safe\": 100\n}\n# ---------- Helpers ----------\ndef haversine_distance(lat1, lon1, lat2, lon2):\n    R = 6371",
+        "detail": "SIH-Models-master.safety-model.geo fencing.feature",
+        "documentation": {}
+    },
+    {
+        "label": "fastapi_app",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "description": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "peekOfCode": "def fastapi_app():\n    # Import the FastAPI app from the local api.py inside the image filesystem.\n    # Because we added the project directory to the Image at /root/app, we\n    # need to ensure Python can import it. We'll adjust sys.path at runtime.\n    import sys\n    from pathlib import Path as _P\n    app_dir = _P(\"/root/app\")\n    if str(app_dir) not in sys.path:\n        sys.path.insert(0, str(app_dir))\n    from api import app as fastapi_app  # type: ignore",
+        "detail": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "description": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "peekOfCode": "app = modal.App(\"geofence-safety-api\")\n# Build the container image (explicit python version)\nimage = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n            \"joblib\",\n            \"pandas\",",
+        "detail": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "description": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "peekOfCode": "image = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n            \"joblib\",\n            \"pandas\",\n            \"numpy\",\n            # Model runtime dependencies",
+        "detail": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "description": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "peekOfCode": "project_root = Path(__file__).resolve().parent\nimage = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model files to ensure they're available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_files = [\n    \"geofence_safety_model.pkl\",\n    \"label_encoder.pkl\",\n    \"geofences.json\"\n]\nfor model_file in model_files:",
+        "detail": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "description": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "peekOfCode": "image = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model files to ensure they're available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_files = [\n    \"geofence_safety_model.pkl\",\n    \"label_encoder.pkl\",\n    \"geofences.json\"\n]\nfor model_file in model_files:\n    file_path = project_root / model_file",
+        "detail": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "model_files",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "description": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "peekOfCode": "model_files = [\n    \"geofence_safety_model.pkl\",\n    \"label_encoder.pkl\",\n    \"geofences.json\"\n]\nfor model_file in model_files:\n    file_path = project_root / model_file\n    if file_path.exists():\n        image = image.add_local_file(str(file_path), remote_path=f\"/root/app/{model_file}\")\n    else:",
+        "detail": "SIH-Models-master.safety-model.geo fencing.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "df",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "df = pd.read_csv(\"geofence_features.csv\")\n# --- DEFINE FEATURES AND NEW TARGET ---\n# We are training the model on the hardest, most realistic problem:\n# predicting the score from only the raw coordinates.\nX = df[[\"latitude\", \"longitude\"]]\ny = df[\"safety_score\"]  # CHANGED: Our target is now the continuous score\n# --- TRAIN/TEST SPLIT ---\n# No 'stratify' is needed for regression targets\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "X",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "X = df[[\"latitude\", \"longitude\"]]\ny = df[\"safety_score\"]  # CHANGED: Our target is now the continuous score\n# --- TRAIN/TEST SPLIT ---\n# No 'stratify' is needed for regression targets\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# --- HYPERPARAMETER TUNING FOR REGRESSION MODEL ---\n# 1. Define the base regression model\nmodel_base = RandomForestRegressor(random_state=42)",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "y",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "y = df[\"safety_score\"]  # CHANGED: Our target is now the continuous score\n# --- TRAIN/TEST SPLIT ---\n# No 'stratify' is needed for regression targets\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42\n)\n# --- HYPERPARAMETER TUNING FOR REGRESSION MODEL ---\n# 1. Define the base regression model\nmodel_base = RandomForestRegressor(random_state=42)\n# 2. Define the grid of parameters to search",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "model_base",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "model_base = RandomForestRegressor(random_state=42)\n# 2. Define the grid of parameters to search\n# We can use a slightly smaller grid for faster tuning\nparam_grid = {\n    'n_estimators': [100, 200, 300],\n    'max_depth': [20, None],          # Let trees be deep to capture complex boundaries\n    'min_samples_split': [2, 5]       # Standard values\n}\n# 3. Set up the Grid Search object\n# For regressors, it automatically uses R-squared for scoring, which is perfect.",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "param_grid",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "param_grid = {\n    'n_estimators': [100, 200, 300],\n    'max_depth': [20, None],          # Let trees be deep to capture complex boundaries\n    'min_samples_split': [2, 5]       # Standard values\n}\n# 3. Set up the Grid Search object\n# For regressors, it automatically uses R-squared for scoring, which is perfect.\ngrid_search = GridSearchCV(estimator=model_base, param_grid=param_grid, \n                           cv=3, n_jobs=-1, verbose=2)\n# 4. Fit the Grid Search to the training data",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "grid_search",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "grid_search = GridSearchCV(estimator=model_base, param_grid=param_grid, \n                           cv=3, n_jobs=-1, verbose=2)\n# 4. Fit the Grid Search to the training data\nprint(\"Starting hyperparameter tuning for REGRESSION model...\")\ngrid_search.fit(X_train, y_train)\n# 5. Get the best performing model from the search\nbest_model = grid_search.best_estimator_\nprint(f\"\\nBest parameters found: {grid_search.best_params_}\")\n# --- EVALUATE THE BEST MODEL ---\nprint(\"\\nEvaluating the best REGRESSION model on the test set:\")",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "best_model",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "best_model = grid_search.best_estimator_\nprint(f\"\\nBest parameters found: {grid_search.best_params_}\")\n# --- EVALUATE THE BEST MODEL ---\nprint(\"\\nEvaluating the best REGRESSION model on the test set:\")\ny_pred = best_model.predict(X_test)\n# Calculate regression metrics\nmse = mean_squared_error(y_test, y_pred)\nrmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "y_pred",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "y_pred = best_model.predict(X_test)\n# Calculate regression metrics\nmse = mean_squared_error(y_test, y_pred)\nrmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "mse",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "mse = mean_squared_error(y_test, y_pred)\nrmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")\nprint(f\"-> R² of 1.0 is a perfect prediction. A score above 0.9 is excellent.\")\n# --- SAVE THE FINAL MODEL ---",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "rmse",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "rmse = np.sqrt(mse)\nr2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")\nprint(f\"-> R² of 1.0 is a perfect prediction. A score above 0.9 is excellent.\")\n# --- SAVE THE FINAL MODEL ---\n# The LabelEncoder is no longer needed.",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "r2",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.geo fencing.training",
+        "description": "SIH-Models-master.safety-model.geo fencing.training",
+        "peekOfCode": "r2 = r2_score(y_test, y_pred)\nprint(f\"Mean Squared Error (MSE): {mse:.2f}\")\nprint(f\"Root Mean Squared Error (RMSE): {rmse:.2f}\")\nprint(f\"R-squared (R²): {r2:.2f}\")\nprint(\"\\nInterpretation:\")\nprint(f\"-> RMSE means our model's score predictions are, on average, off by about +/- {rmse:.2f} points.\")\nprint(f\"-> R² of 1.0 is a perfect prediction. A score above 0.9 is excellent.\")\n# --- SAVE THE FINAL MODEL ---\n# The LabelEncoder is no longer needed.\njoblib.dump(best_model, \"geofence_safety_model.pkl\")",
+        "detail": "SIH-Models-master.safety-model.geo fencing.training",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherSafetyPredictor",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "class WeatherSafetyPredictor:\n    \"\"\"Weather Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"weather_safety_model_kaggle.pkl\"):\n        \"\"\"Initialize the predictor with the trained model\"\"\"\n        # Resolve model path relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        resolved_path = Path(model_path)\n        if not resolved_path.is_absolute():\n            resolved_path = base_dir / model_path\n        self.model_path = str(resolved_path)",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherInput",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "class WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    # Allow visibility and cloud_cover without an arbitrary upper limit; still enforce non-negative\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0)\n    cloud_cover: Optional[float] = Field(None, description=\"Cloud cover (0-1)\", ge=0)",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "OpenMeteoInput",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "class OpenMeteoInput(BaseModel):\n    \"\"\"Input schema for fetching data from Open-Meteo API\"\"\"\n    latitude: float = Field(..., description=\"Latitude in decimal degrees\", ge=-90, le=90)\n    longitude: float = Field(..., description=\"Longitude in decimal degrees\", ge=-180, le=180)\n    days: Optional[int] = Field(7, description=\"Number of days to forecast\", ge=1, le=16)\nclass SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    safety_score: int = Field(..., description=\"Safety score (0-4)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    safety_category: str = Field(..., description=\"Safety category name\")",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "SafetyPrediction",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "class SafetyPrediction(BaseModel):\n    \"\"\"Output schema for safety predictions\"\"\"\n    safety_score: int = Field(..., description=\"Safety score (0-4)\")\n    safety_score_100: int = Field(..., description=\"Safety score scaled 1-100\")\n    safety_category: str = Field(..., description=\"Safety category name\")\n    confidence: float = Field(..., description=\"Prediction confidence (0-1)\")\n    probabilities: Dict[str, float] = Field(..., description=\"Probability for each safety category\")\n    input_features: Dict[str, float] = Field(..., description=\"Processed input features\")\n@app.on_event(\"startup\")\ndef startup_event():",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "startup_event",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "def startup_event():\n    \"\"\"FastAPI startup event: initialize the predictor\"\"\"\n    global predictor\n    predictor = WeatherSafetyPredictor()\n    if predictor.model is None:\n        logger.warning(\"Model failed to load during startup. Ensure 'weather_safety_model_kaggle.pkl' exists in the same directory as 'api.py' and contains 'model', 'scaler', and 'feature_names'.\")\n@app.get(\"/\")\nasync def root():\n    \"\"\"Root endpoint with API information\"\"\"\n    return {",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass WeatherSafetyPredictor:\n    \"\"\"Weather Safety Prediction Model Wrapper Class\"\"\"\n    def __init__(self, model_path: str = \"weather_safety_model_kaggle.pkl\"):\n        \"\"\"Initialize the predictor with the trained model\"\"\"\n        # Resolve model path relative to this file's directory for robustness\n        base_dir = Path(__file__).resolve().parent\n        resolved_path = Path(model_path)\n        if not resolved_path.is_absolute():\n            resolved_path = base_dir / model_path",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "app = FastAPI(\n    title=\"Weather Safety Prediction API\",\n    description=\"API for predicting weather safety scores based on meteorological conditions\",\n    version=\"1.0.0\",\n    docs_url=\"/docs\",\n    redoc_url=\"/redoc\"\n)\n# Add CORS middleware\napp.add_middleware(\n    CORSMiddleware,",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "predictor",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.api",
+        "description": "SIH-Models-master.safety-model.weather model.api",
+        "peekOfCode": "predictor = None\nclass WeatherInput(BaseModel):\n    \"\"\"Input schema for weather data prediction\"\"\"\n    temperature: float = Field(..., description=\"Temperature in Celsius\", ge=-50, le=60)\n    apparent_temperature: Optional[float] = Field(None, description=\"Apparent temperature in Celsius\", ge=-60, le=70)\n    humidity: float = Field(..., description=\"Humidity (0-1 decimal or 0-100 percentage)\", ge=0, le=100)\n    wind_speed: float = Field(..., description=\"Wind speed in km/h\", ge=0, le=200)\n    wind_bearing: Optional[float] = Field(None, description=\"Wind direction in degrees\", ge=0, le=360)\n    # Allow visibility and cloud_cover without an arbitrary upper limit; still enforce non-negative\n    visibility: float = Field(..., description=\"Visibility in km\", ge=0)",
+        "detail": "SIH-Models-master.safety-model.weather model.api",
+        "documentation": {}
+    },
+    {
+        "label": "fastapi_app",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.modal_app",
+        "description": "SIH-Models-master.safety-model.weather model.modal_app",
+        "peekOfCode": "def fastapi_app():\n    # Import the FastAPI app from the local api.py inside the image filesystem.\n    # Because we added the project directory to the Image at /root/app, we\n    # need to ensure Python can import it. We'll adjust sys.path at runtime.\n    import sys\n    from pathlib import Path as _P\n    app_dir = _P(\"/root/app\")\n    if str(app_dir) not in sys.path:\n        sys.path.insert(0, str(app_dir))\n    from api import app as fastapi_app  # type: ignore",
+        "detail": "SIH-Models-master.safety-model.weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.modal_app",
+        "description": "SIH-Models-master.safety-model.weather model.modal_app",
+        "peekOfCode": "app = modal.App(\"weather-safety-api\")\n# Build the container image (explicit python version)\nimage = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n                \"joblib\",\n                \"pandas\",",
+        "detail": "SIH-Models-master.safety-model.weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.modal_app",
+        "description": "SIH-Models-master.safety-model.weather model.modal_app",
+        "peekOfCode": "image = (\n    modal.Image.debian_slim(python_version=\"3.11\").pip_install(\n        [\n            \"fastapi==0.110.0\",\n            \"uvicorn[standard]==0.29.0\",\n            \"pydantic==1.10.14\",\n                \"joblib\",\n                \"pandas\",\n                \"numpy\",\n                \"requests\",",
+        "detail": "SIH-Models-master.safety-model.weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "project_root",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.modal_app",
+        "description": "SIH-Models-master.safety-model.weather model.modal_app",
+        "peekOfCode": "project_root = Path(__file__).resolve().parent\nimage = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model file to ensure it's available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_file = project_root / \"weather_safety_model_kaggle.pkl\"\nif model_file.exists():\n    image = image.add_local_file(str(model_file), remote_path=\"/root/app/weather_safety_model_kaggle.pkl\")\nelse:\n    # Leave this as informative; the runtime will still log if the file is missing.\n    pass",
+        "detail": "SIH-Models-master.safety-model.weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "image",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.modal_app",
+        "description": "SIH-Models-master.safety-model.weather model.modal_app",
+        "peekOfCode": "image = image.add_local_dir(str(project_root), remote_path=\"/root/app\")\n# Explicitly include the trained model file to ensure it's available inside\n# the Modal image regardless of how add_local_dir behaves for binary files.\nmodel_file = project_root / \"weather_safety_model_kaggle.pkl\"\nif model_file.exists():\n    image = image.add_local_file(str(model_file), remote_path=\"/root/app/weather_safety_model_kaggle.pkl\")\nelse:\n    # Leave this as informative; the runtime will still log if the file is missing.\n    pass\n# If you prefer adding only python source directories, you can use:",
+        "detail": "SIH-Models-master.safety-model.weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "model_file",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.modal_app",
+        "description": "SIH-Models-master.safety-model.weather model.modal_app",
+        "peekOfCode": "model_file = project_root / \"weather_safety_model_kaggle.pkl\"\nif model_file.exists():\n    image = image.add_local_file(str(model_file), remote_path=\"/root/app/weather_safety_model_kaggle.pkl\")\nelse:\n    # Leave this as informative; the runtime will still log if the file is missing.\n    pass\n# If you prefer adding only python source directories, you can use:\n# image = image.add_local_python_source(\"..\")  # relative to project layout\n# Expose FastAPI app via Modal\n@app.function(image=image, min_containers=1, timeout=600)",
+        "detail": "SIH-Models-master.safety-model.weather model.modal_app",
+        "documentation": {}
+    },
+    {
+        "label": "WeatherSafetyModel",
+        "kind": 6,
+        "importPath": "SIH-Models-master.safety-model.weather model.training",
+        "description": "SIH-Models-master.safety-model.weather model.training",
+        "peekOfCode": "class WeatherSafetyModel:\n    def __init__(self):\n        self.model = None\n        self.scaler = StandardScaler()\n        self.label_encoder = LabelEncoder()\n        self.feature_names = None\n        self.precip_encoder = LabelEncoder()\n    def fetch_openmeteo_data(self, latitude=40.7128, longitude=-74.0060, days=30):\n        \"\"\"\n        Fetch weather data from Open-Meteo API",
+        "detail": "SIH-Models-master.safety-model.weather model.training",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.training",
+        "description": "SIH-Models-master.safety-model.weather model.training",
+        "peekOfCode": "def main():\n    \"\"\"\n    Main execution function for training on Kaggle dataset\n    \"\"\"\n    logger.info(\"Starting Weather Safety Model Training with Kaggle Dataset...\")\n    # Initialize the model\n    weather_model = WeatherSafetyModel()\n    # IMPORTANT: Replace with your actual dataset path\n    dataset_path = \"weatherHistory.csv\"  # Update this path\n    # Load the Kaggle dataset",
+        "detail": "SIH-Models-master.safety-model.weather model.training",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.training",
+        "description": "SIH-Models-master.safety-model.weather model.training",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass WeatherSafetyModel:\n    def __init__(self):\n        self.model = None\n        self.scaler = StandardScaler()\n        self.label_encoder = LabelEncoder()\n        self.feature_names = None\n        self.precip_encoder = LabelEncoder()\n    def fetch_openmeteo_data(self, latitude=40.7128, longitude=-74.0060, days=30):\n        \"\"\"",
+        "detail": "SIH-Models-master.safety-model.weather model.training",
+        "documentation": {}
+    },
+    {
+        "label": "test_health_check",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_health_check():\n    \"\"\"Test the health check endpoint\"\"\"\n    print(\"=== Health Check ===\")\n    response = requests.get(f\"{BASE_URL}/health\")\n    print(f\"Status: {response.status_code}\")\n    print(f\"Response: {response.json()}\")\n    print()\ndef test_model_info():\n    \"\"\"Get model information\"\"\"\n    print(\"=== Model Info ===\")",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_model_info",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_model_info():\n    \"\"\"Get model information\"\"\"\n    print(\"=== Model Info ===\")\n    response = requests.get(f\"{BASE_URL}/model/info\")\n    print(f\"Status: {response.status_code}\")\n    if response.status_code == 200:\n        model_info = response.json()\n        print(f\"Model Type: {model_info['model_type']}\")\n        print(f\"Features Count: {model_info['features_count']}\")\n        print(f\"Safety Categories: {model_info['safety_categories']}\")",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_basic_prediction",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_basic_prediction():\n    \"\"\"Test basic weather prediction\"\"\"\n    print(\"=== Basic Prediction ===\")\n    # Example: Pleasant weather\n    weather_data = {\n        \"temperature\": 22.0,\n        \"apparent_temperature\": 25.0,\n        \"humidity\": 0.6,  # 60%\n        \"wind_speed\": 8.0,  # km/h\n        \"wind_bearing\": 180.0,",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_extreme_weather",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_extreme_weather():\n    \"\"\"Test prediction with extreme weather conditions\"\"\"\n    print(\"=== Extreme Weather Prediction ===\")\n    # Example: Dangerous conditions\n    weather_data = {\n        \"temperature\": -10.0,  # Very cold\n        \"apparent_temperature\": -15.0,\n        \"humidity\": 0.95,  # Very humid\n        \"wind_speed\": 80.0,  # Very strong wind\n        \"wind_bearing\": 270.0,",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_openmeteo_integration",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_openmeteo_integration():\n    \"\"\"Test Open-Meteo API integration\"\"\"\n    print(\"=== Open-Meteo Integration ===\")\n    # Example: Weather for New York City\n    location_data = {\n        \"latitude\": 40.7128,\n        \"longitude\": -74.0060,\n        \"days\": 3\n    }\n    response = requests.post(f\"{BASE_URL}/predict/openmeteo\", json=location_data)",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_batch_prediction",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_batch_prediction():\n    \"\"\"Test batch prediction with multiple weather conditions\"\"\"\n    print(\"=== Batch Prediction ===\")\n    weather_batch = [\n        {\n            \"temperature\": 25.0,\n            \"humidity\": 0.5,\n            \"wind_speed\": 5.0,\n            \"wind_bearing\": 180.0,\n            \"visibility\": 20.0,",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "test_input_validation",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def test_input_validation():\n    \"\"\"Test input validation with invalid data\"\"\"\n    print(\"=== Input Validation Test ===\")\n    # Invalid temperature (too high)\n    invalid_data = {\n        \"temperature\": 100.0,  # Too high\n        \"humidity\": 0.6,\n        \"wind_speed\": 10.0,\n        \"wind_bearing\": 180.0,\n        \"visibility\": 15.0,",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "def main():\n    \"\"\"Run all tests\"\"\"\n    print(\"Weather Safety API Testing\")\n    print(\"=\" * 50)\n    print()\n    try:\n        test_health_check()\n        test_model_info()\n        test_basic_prediction()\n        test_extreme_weather()",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
+        "documentation": {}
+    },
+    {
+        "label": "BASE_URL",
+        "kind": 5,
+        "importPath": "SIH-Models-master.safety-model.weather model.use_api",
+        "description": "SIH-Models-master.safety-model.weather model.use_api",
+        "peekOfCode": "BASE_URL = \"http://localhost:8000\"\ndef test_health_check():\n    \"\"\"Test the health check endpoint\"\"\"\n    print(\"=== Health Check ===\")\n    response = requests.get(f\"{BASE_URL}/health\")\n    print(f\"Status: {response.status_code}\")\n    print(f\"Response: {response.json()}\")\n    print()\ndef test_model_info():\n    \"\"\"Get model information\"\"\"",
+        "detail": "SIH-Models-master.safety-model.weather model.use_api",
         "documentation": {}
     },
     {
